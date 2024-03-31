@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <link rel="stylesheet" href="Css/ForIndex.css">
+    <title>Amazon Echo Pop | SmartHome</title>
+    <link rel="icon" type="image/png" href="Img/Logo-Title.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+
+    <header style=" z-index: 999 /*es para que quede por encima de todos los elementos y no haya fallas*/;">
+      <h1><a href="index.html"><img src="Img/LogoHeader.png" alt="Logo"></a></h1>
+      
+          <button onclick="abrirPagina('CatalogoProductos.html')">Ver Productos</button>
+      
+          <nav class="menu">
+              <ul id="AcomodarHorizontales">
+                  <li><a href="index.html">Inicio</a></li>                    
+                  <li class="dropdown">
+                      <a href="#" style="margin-right: 230px;">Explorar</a>
+                      <ul class="submenu">
+                          <li><a href="CatalogoProductos.html">Iluminación Inteligente</a></li>
+                          <li><a href="CatalogoProductos.html">Electrodomesticos Inteligentes</a></li>
+                          <li><a href="CatalogoProductos.html">Climatización Inteligente</a></li>
+                          <li><a href="CatalogoProductos.html">Asistentes de Voz y Controladores</a></li>
+                      </ul>
+                  </li>   
+                  
+                  <li>
+                      <div class="BusquedaDIV">
+                          <div id="AlineadoBarra">
+                          <input id="BarraBusqueda" type="text" placeholder="Buscar...">
+                          <button id="ButtonBusqueda" type="submit"><img src="Img\IconoBusqueda.png" alt="IconoBuscar"></button>
+                          </div>
+                      </div>            
+                  </li>
+                  <li id="AcomodarHorizontales">
+                      <div id="CarritoAcomodo">
+                          <a href="CatalogoProductos.html"><img id="CarritoIcono" src="Img/CarritoCompra.png" alt="IconoCarrito"></a>
+                      </div>
+                      <div>
+                      <a href="">Iniciar Sesión</a>
+                      </div>
+                  </li>
+              </ul>
+            </nav>             
+  </header>
+
+  
+    <main class="MainProducto">
+      <article style="padding-top: 130px; ">
+        <div class="container">
+          <div class="product-content">
+            <div class="product-image-container" id="main-image">
+              <img src="Img/Alexa1.jpg" alt="Imagen del producto" id="product-image" />
+            </div>
+            <div class="product-description" style="padding-top: 150px;">
+              <h2>
+                Amazon Echo Pop Altavoz <br />
+                inteligente con Alexa 1ra <br />
+                Gen 2023 Glaciar Blanco
+              </h2>
+              <p id="precio-producto">$699.00</p>
+              <!-- Elemento para mostrar el precio del producto -->
+              <label for="cantidad">Cantidad:</label>
+              <input
+                type="number"
+                id="cantidad"
+                name="cantidad"
+                min="1"
+                value="1"
+              />
+              <br />
+              <!-- Iconos agregados -->
+              <div class="redes-sociales">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-pinterest"></i>
+              </div>
+              <!-- Fin de iconos agregados -->
+              <div style="display: flex; align-items: center">
+                <button id="AgregarAlCarrito" onclick="updateRatingText()">
+                  Agregar al carrito
+                </button>
+                <div class="corazon" style="margin-left: 10px">
+                  <i class="bi bi-heart-fill heart"></i>
+                </div>
+              </div>
+              <div class="calificar">
+                <div
+                  class="rating-message"
+                  id="rating-message"
+                  style="display: none"
+                ></div>
+                <i
+                  class="bi bi-star-fill star"
+                  onclick="toggleStar(this, 'Me encanta')"
+                ></i>
+                <i
+                  class="bi bi-star-fill star"
+                  onclick="toggleStar(this, 'Muy Bueno')"
+                ></i>
+                <i
+                  class="bi bi-star-fill star"
+                  onclick="toggleStar(this, 'Bueno')"
+                ></i>
+                <i
+                  class="bi bi-star-fill star"
+                  onclick="toggleStar(this, 'Normal')"
+                ></i>
+                <i
+                  class="bi bi-star-fill star"
+                  onclick="toggleStar(this, 'No me gusta')"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="product-thumbnails">
+            <div class="thumbnail" onclick="changeImage('Img/Alexa1.jpg')">
+              <img src="Img/Alexa1.jpg" alt="Thumbnail 1" />
+            </div>
+            <div class="thumbnail" onclick="changeImage('Img/Alexa2.jpg')">
+              <img src="Img/Alexa2.jpg" alt="Thumbnail 2" />
+            </div>
+            <div class="thumbnail" onclick="changeImage('Img/Alexa3.jpg')">
+              <img src="Img/Alexa3.jpg" alt="Thumbnail 3" />
+            </div>
+          </div>
+          <div class="product-long-description">
+            <h1>Descripción:</h1>
+            <p>
+              -Cuenta con conectividad WiFi para que su asistente virtual Alexa
+              registre los comandos de voz que le dictes y te ofrezca respuestas
+              instantáneas a tus necesidades.<br />
+              -Pídele a Alexa que reproduzca las canciones más populares del
+              momento, estaciones de radio específicas, podcast o elige una playlist
+              directamente desde Amazon Music, Apple Music, Spotify o Deezer.<br />
+              -Descubre su nuevo sonido envolvente, que te brinda agudos
+              equilibrados, medios dinámicos y graves verdaderamente profundos,
+              ideal para un audio en alta definición que cobra vida.
+            </p>
+          </div>
+        </div>
+    
+        <div class="comments-box">
+          <div class="comment-title">Comentarios</div>
+        </div>
+    
+        <div class="user-comment-box">
+          <textarea
+            id="user-comment"
+            name="user-comment"
+            rows="4"
+            cols="50"
+            placeholder="Ingresa tu comentario aquí..."
+          ></textarea>
+          <br />
+          <button id="add-comment-btn">Agregar Comentario</button>
+        </div>
+    
+        <div class="Tuscomentarios">
+          <div class="user-comments-box">
+            <div class="comment-title"></div>
+            <ul id="user-comments-list"></ul>
+          </div>
+        </div>
+      </article>
+      
+      <script>
+         function abrirPagina(pagina) {
+        window.location.href = pagina;
+      }
+    
+      window.onload = function() {
+          var inputBusqueda = document.getElementById('busqueda');
+    
+          // Guardar el texto predeterminado
+          var textoPredeterminado = inputBusqueda.value;
+    
+          // Evento cuando se enfoca el input
+          inputBusqueda.addEventListener('focus', function() {
+            if (this.value === textoPredeterminado) {
+              this.value = '';
+            }
+          });
+    
+          // Evento cuando se pierde el foco del input
+          inputBusqueda.addEventListener('blur', function() {
+            if (this.value === '') {
+              this.value = textoPredeterminado;
+            }
+          });
+        };
+      </script>
+      <script src="JS/scriptProduct.js"></script>
+    </main>
+    <footer>
+      <div id="OrdenarHorizontal" class="FooterDivAcomodo">
+
+          <div id="FooterDivUno" style="margin-right: 50px;">
+              <p>FAQ</p>
+              <p>CONTACTAR</p>
+              <p style="padding-top: 90px;">Veamos los Productos</p>
+              <div id="OrdenarHorizontal" style="justify-content: space-between; padding-top: 100px;">
+                  <img src="Img/FacebookLogo.png" alt="FBLOGO" style="width: 25px; height: auto;">
+                  <img src="Img/TwitterLogo.png" alt="TWLOGO"  style="width: 25px; height: auto;">
+                  <img src="Img/YoutubeLogo.png" alt="YTLogo"  style="width: 25px; height: auto;">
+              </div>
+              <p>© 2024 SMARTHOME</p>
+          </div>
+              
+          <div id="FooterDivDos" style="margin-right: 50px;">
+              <p>NOSOTROS</p>
+              <p>SmartHome es tu tienda online de <br>accesorios para hogar inteligente lider <br>en la industria, siempre trabajando con <br>las mejores marcas para llegar a ti.</p>
+              <ul>
+                  <li>Lideres en la industria</li>
+                  <li>Compras 100% seguras</li>
+                  <li>Entregas garantizadas</li>
+              </ul>
+          </div>
+
+          <div id="FooterDivTres">
+              <p>NOVEDADES</p>
+              <p>Registrate con nosotros para recibir informacion <br>acerca de nuestros nuevos productos, los recien <br>llegados y los que estan por llegar, mantente al<br> pendiente de nuestras novedades.</p>
+              <div>
+                  <input id="FooterCorreoElectronicoBarra" type="text" name="CorreoElectronico" placeholder="Ingresa tu email aquí*">                        
+              </div>                    
+              <button>Unirse</button>
+          </div>
+
+      </div>
+  </footer>
+  </body>
+</html>
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DL4V3R27KH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DL4V3R27KH');
+</script>

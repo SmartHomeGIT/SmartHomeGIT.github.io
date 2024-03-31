@@ -1,0 +1,894 @@
+
+#MainIndex{
+    background-color: rgb(243, 243, 243);
+    padding-top: 75px;
+
+}
+
+button:hover{
+    background-color: #009295 ;
+}
+#OrdenarHorizontal{
+    flex: 1;
+    display: flex;
+}
+
+Body{
+    margin: 0px;
+    width: 100%;
+    
+}
+
+
+
+/*HEADER*/
+header {
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    border-top: 6px solid purple;
+    background-color: white;
+    font-style: oblique;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2); /* Agregar sombra */
+
+}
+
+header h1 {
+    color: rgb(243, 160, 252);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    margin-right: 20px;
+    width: 100px; /* Ancho */
+    height: 50px;
+}
+
+header h1 img{
+    width: auto;
+    height: 40px;
+}
+
+header button{
+    margin-right: 40px;
+    height: 40px;
+    width: 90px;
+    background-color: #44DBBD;
+    border: 0px;
+    color: white;
+}
+
+.menu {
+    padding-top: 10px;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    flex: 1;
+    font-size: x-large;
+
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre elementos del menú */
+    align-items: center;
+}
+
+.menu a {
+    color: grey;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+
+
+
+/* Estilos para el menú desplegable */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: grey;
+    z-index: 1;
+    font-size: x-large;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    display: block;
+    margin: 0;
+}
+
+.submenu a {
+    padding: 10px 20px;
+}
+
+#BusquedaDIV{
+    display: flex;
+    margin: 20px;
+    border-radius: 30px; /* Redondear la barra de búsqueda */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Agregar sombra */
+
+}
+
+#AlineadoBarra{
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    border: 1px solid transparent; /* Añadir borde para referencia */
+    border-radius: 30px; /* Redondear la barra de búsqueda */
+    
+}
+
+#BarraBusqueda {
+    padding: 10px;
+    border: 0.5px solid Gray;
+    border-right: 0px;
+    border-radius: 30px 0 0 30px; /* Redondear solo la esquina izquierda */
+    width: 300px;
+}
+
+#ButtonBusqueda {
+    background-color: #44DBBD; /* Color turquesa */
+    border: none;
+    border-radius: 0 30px 30px 0; /* Redondear solo la esquina derecha */
+    padding: 8px 15px;
+    height: 37.5px;
+    cursor: pointer;  
+    border: 0.5px solid Gray;
+    border-left: 0px;    
+}
+
+#ButtonBusqueda img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+#ButtonBusqueda:hover{
+    background-color: #009295;
+}
+#CarritoIcono {
+    width: 29px;
+    height: 29px;    
+}
+
+#CarritoAcomodo{
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+#AcomodarHorizontales{
+    display: flex;
+}
+
+
+
+
+/*EFECTOS HEADER MENU*/
+nav a:hover{
+    color: #44DBBD;
+}
+
+/*EFECTOS HEADER MENU FIN*/
+/*HEADER FIN*/
+
+
+
+
+
+
+/*SECCION UNO*/
+/*Tipo de letra para la seccion 1*/
+/*@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirNextLight.ttf') format('truetype');
+}  SE MOVIO AL INDEX PARA QUE SE PUSIERA CORRECTAMENTE */
+
+
+#IndexSeccionUno{
+    height: auto;
+}
+
+#QuienesSomosSection{
+    padding-left: 850px;
+    padding-top: 170px;
+    padding-bottom: 300px;
+}
+
+#QuienesSomosSection h1{
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: rgb(67, 67, 67);
+}
+
+#QuienesSomosSection p{    
+    font-size:15px;
+    color: rgb(85, 85, 85);
+}
+
+#custom-list {
+    list-style: none; /* Eliminar las viñetas predeterminadas */
+}
+
+#custom-list li::before {
+    content: ">"; /* Utilizar un > como viñeta */
+    color: #44DBBD; /* Color de la viñeta */
+    display: inline-block;
+    font-weight: 1000;
+    width: 1em; /* Ajustar el ancho para alinear correctamente */
+    margin-right: 0.5em; /* Espacio entre la viñeta y el texto */
+}
+
+#custom-list li {
+    padding-top: 30px;
+    font-family: 'Avenir';
+    color: rgb(85, 85, 85); /* Color del texto */
+}
+
+#aparecerViñeta {
+    opacity: 0; /* Inicialmente, el elemento está oculto */
+    animation: aparecer 4s ease forwards; /* Definir la animación */
+}
+
+#aparecerViñeta2 {
+    opacity: 0; /* Inicialmente, el elemento está oculto */
+    animation: aparecer 6s ease forwards; /* Definir la animación */
+}
+
+#aparecerViñeta3 {
+    opacity: 0; /* Inicialmente, el elemento está oculto */
+    animation: aparecer 8s ease forwards; /* Definir la animación */
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0; /* Estado inicial: completamente transparente */
+    }
+    to {
+        opacity: 1; /* Estado final: completamente visible */
+    }
+}
+/*SECCION UNO Fin*/
+
+
+
+
+/*SECCION DOS*/
+
+#IndexSeccionDos{
+    background-color: white;
+    height: auto;
+    
+}
+
+#IndexSeccionDosAcomodo{
+    display: flex;
+    justify-content: space-between;
+}
+
+#IndexSeccionDosAcomodo Div{
+    flex: 1;
+    max-width: 50%;
+}
+
+    
+#IndexSeccionDosAcomodo Div:nth-child(2){
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+#TuHogarMasInteligenteSection {
+    padding-top: 100px;
+    padding-left: 300px;
+    padding-bottom: 100px;
+}
+
+#TuHogarMasInteligenteSection h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: rgb(67, 67, 67);
+}
+
+#TuHogarMasInteligenteSection p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(67, 67, 67);
+}
+
+#TuHogarMasInteligenteSection p:nth-child(3){
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgb(67, 67, 67);
+    text-decoration: underline 1px rgb(67, 67, 67) ;
+}
+
+#TuHogarMasInteligenteSection button{
+    margin-right: 40px;
+    height: 40px;
+    width: 90px;
+    background-color: #44DBBD;
+    border: 0px;
+    color: white;
+}
+
+#TuHogarMasInteligenteSection button:hover{
+    background-color: #009295;
+}
+
+/*SECCION DOS Fin*/
+
+
+
+
+/*SECCION TRES*/
+#IndexSeccionTres{
+    background-color: white;
+    height: auto;
+}
+
+#IndexSeccionTresAcomodo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.IconoInformacionTexto{
+    font-family: Helvetica;
+    color: rgb(67, 67, 67);
+    text-align: center;
+    margin-right: 90px;
+    width: 240px;
+}
+
+
+
+.IconoInformacionTexto:last-child{
+    margin-right: 0px;
+}
+
+.IconoInformacionTexto img{
+    height: 90px;
+    width: 90px;
+}
+/*SECCION TRES Fin*/
+
+
+
+/*SECCION CUATRO*/
+#IndexSeccionCuatro{
+    height: auto;
+    text-align: center;
+    background-color: white;
+}
+
+#IndexSeccionCuatro h1{
+    padding-top: 250px;
+    font-size: 70px;
+    font-family: 'Avenir';
+    color: rgb(136, 136, 136);
+}
+
+#IndexSeccionCuatro p{
+    padding-top: 10px;
+    padding-bottom: 250px;
+    font-family: 'Avenir';
+    color: rgb(136, 136, 136);
+    font-style: italic;
+}
+
+
+/*SECCION CUATRO Fin*/
+
+
+/*SECCION PRODUCTOS*/
+
+#IndexSeccionProductos{
+    background-color: rgb(243, 243, 243);
+}
+
+#TarjetaProducto{    
+    width: 400px;
+    height: 600px;
+    border: 2px solid rgb(165, 165, 165);
+    background-color: white;        
+}
+
+#TarjetaProducto h1{
+    text-align: left;
+}
+
+#TarjetaProducto p{
+    text-align: end;
+}
+
+
+#TarjetaProducto img{
+    width: 100%;
+    height: 70%;
+}
+/*SECCION PRODUCTOS Fin*/
+
+/*SECCION CINCO*/
+
+#IndexSeccionCinco{
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+}
+
+#IndexSeccionCinco h1{
+    font-size: 45px;
+    color: rgb(49, 48, 48);
+    margin-bottom: 0px;
+}
+
+#IndexSeccionCinco button{
+    background-color: #44DBBD;
+    color: white;
+    height: 35px;
+    width: 120px;
+    border: 0px;
+}
+
+#IndexSeccionCinco button:hover{
+    background-color: #009295;
+}
+
+
+#IndexSeccionCincoTextoBtn{
+    padding-top: 100px;
+    padding-left: 300px;
+}
+
+
+/*SECCION CINCO Fin*/
+
+/*FOOTER*/
+footer{
+    background-color: #F3F3F3;
+    height: 700px;
+    width: 100%;
+    justify-content: space-between;
+     
+}
+
+
+#FooterDivUno p{
+    color: #2F2E2E;
+    font-family: 'Avenir';
+    text-decoration: underline 1px;
+}
+
+#FooterDivUno p:nth-child(5){
+    color: #9F9F9E;
+    margin-top: 20px;
+    font-size: 10px;
+    text-decoration: none;
+    
+}
+
+.FooterDivAcomodo{
+    padding-top: 150px;
+    justify-content: center;
+}
+
+#FooterDivDos p{ 
+    font-family: 'Avenir';
+    color: #605E5E;
+}
+
+#FooterDivDos p:first-child{ 
+    color: #2F2E2E;
+    font-size: 20px;
+}
+
+#FooterDivDos ul{
+    font-family: 'Avenir';
+    color: #605E5E;
+}
+
+#FooterDivTres p{
+    font-family: 'Avenir';
+    color: #605E5E;
+}
+
+#FooterDivTres p:first-child{
+    color: #2F2E2E;
+    font-size: 20px;
+}
+
+#FooterCorreoElectronicoBarra{
+    margin-top: 70px;
+    margin-left: 20px;
+    width: 300px;
+    height: 35px;
+    border: 0;
+    background-color: #E0E0E0;
+
+}
+
+footer button{
+    background-color: #44DBBD;
+    border: 0;
+    color: white;
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 305px;
+    height: 35px;
+
+}
+
+/*FOOTER Fin*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+||||          ||||   ||||||||||     |||||||||||     ||||||||||||    ||||||||||||    ||||       ||||             
+|||||||    |||||||  ||||    ||||    ||||    ||||        ||||            ||||        ||||||     ||||            
+|||| |||||||| ||||  ||||    ||||    ||||    ||||        ||||            ||||        |||| ||    ||||            
+||||   ||||   ||||  ||||    ||||    ||||||||||||        ||||            ||||        ||||  ||   ||||            
+||||          ||||  ||||||||||||    ||||  ||||          ||||            ||||        ||||   ||  ||||        
+||||          ||||  ||||    ||||    ||||   ||||         ||||            ||||        ||||    || ||||         
+||||          ||||  ||||    ||||    ||||    ||||        ||||            ||||        ||||     ||||||          
+||||          ||||  ||||    ||||    ||||     ||||       ||||        ||||||||||||    ||||      |||||             
+
+
+
+                ||||                ||||
+                ||||                ||||
+                ||||                ||||
+                ||||                ||||            
+            ||||||||||||        ||||||||||||                
+             ||||||||||          ||||||||||   
+              ||||||||            ||||||||  
+               ||||||              ||||||
+                ||||                ||||
+                 ||                  ||
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*ESTILOS PRODUCTO*/
+#MainProducto{
+    background-color: rgb(243, 243, 243);
+    padding-top: 75px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    margin-top: 50px;
+}
+
+.product-content {
+    display: flex;
+}
+
+.star {
+    font-size: 32px;
+    color: #bbb;
+    transition: color 0.3s;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: -10px;
+    margin-left: 5px;
+}
+.star.checked, .star:hover {
+    color: gold;
+}
+.heart {
+    font-size: 32px;
+    color: #44DBBD;
+    cursor: pointer;
+    position: absolute;
+    top: 350px; /* Ajustar la posición verticalmente */
+    margin-right: 450px; /* Ajustar la posición horizontalmente */
+}
+
+.heart.liked {
+    color: #ff0000; /* Rojo */
+}
+.product-image-container {
+    position: relative;
+    width: 510px;
+    /* Ancho del contenedor */
+    height: 510px;
+    /* Alto del contenedor */
+    border: 2px solid black;
+    margin-top: -10px;
+    margin-right: 650px;
+    padding: 10px;
+}
+
+.product-image {
+    position: absolute;
+    top: 50%;
+    /* Coloca la parte superior de la imagen en el centro vertical */
+    left: 50%;
+    /* Coloca el lado izquierdo de la imagen en el centro horizontal */
+    transform: translate(-50%, -50%);
+    /* Desplaza la imagen hacia atrás en su propia mitad en ambas direcciones */
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+    /* La altura se ajusta automáticamente para mantener la relación de aspecto */
+    object-fit: contain;
+    /* Ajusta la imagen para que se ajuste dentro del contenedor manteniendo su relación de aspecto */
+}
+
+.product-thumbnails {
+    margin-left: -77%;
+    /* Ajusta la distancia desde el borde izquierdo */
+    /* Mantén las demás propiedades sin cambios */
+    display: flex;
+    flex-direction: row;
+    margin-top: 550px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-right: 10px; /* Espacio entre las miniaturas */
+    cursor: pointer;
+    border: 2px solid black; /* Añade un borde a los contenedores de miniaturas */
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Esconder las flechas en Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#cantidad{
+    width: 50px;
+    height: 30px;
+}
+
+#AgregarAlCarrito {
+    width: 300px; /* Ancho deseado */
+    height: 40px; /* Alto deseado */
+    background-color: #44DBBD; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Eliminar borde */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    margin-top: 35px; /* Espacio arriba del botón */
+}
+
+.comments-box {
+    padding: 10px;
+    font-size: 1.2em; /* Tamaño de letra más grande */
+    text-align: left; /* Texto alineado a la izquierda */
+    margin-top: 80px;
+    margin-left: 20px; /* Separación del margen izquierdo */
+    background-color: #44DBBD;
+}
+
+.user-comment-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.user-comment-box textarea {
+    width: 93%;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin: center;
+    resize: vertical;
+}
+
+.user-comment-box button {
+    padding: 10px 20px;
+    background-color: #44DBBD;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.product-description {
+    position: absolute;
+    top: 40px;
+    /* Ajusta la posición vertical según sea necesario */
+    margin-left: 750px;
+    /* Centra horizontalmente */
+    transform: translateX(-50%);
+    /* Centra horizontalmente */
+}
+.Tuscomentarios {
+    margin-top: 20px;
+    text-align: center;
+}
+.user-comments-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.comment-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.user-comments-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-comments-box li {
+ 
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.product-long-description {
+    margin-top: 700px;
+    /* Ajusta la distancia desde la parte superior */
+    margin-left: -22%;
+    /* Ajusta la ditancia desde el borde izquierdo */
+}
+.redes-sociales {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+
+.redes-sociales i {
+    font-size: 24px;
+}
+/*ESTILOS PRODUCTO FIN */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ESTILOS CATALOGO */
+/* Estilos para los productos */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-box {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px);
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.product-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.product-box h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.product-box p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Estilos para el botón desplegable */
+.Filtros {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: rgb(100, 209, 174);
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 120px;
+    margin-left: 25px;  
+    margin-top: 20px;   
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #009295;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*ESTILOS CATALOGO */
