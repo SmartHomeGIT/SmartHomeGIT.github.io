@@ -173,33 +173,7 @@
         </div>
       </article>
       
-      <script>
-         function abrirPagina(pagina) {
-        window.location.href = pagina;
-      }
-    
-      window.onload = function() {
-          var inputBusqueda = document.getElementById('busqueda');
-    
-          // Guardar el texto predeterminado
-          var textoPredeterminado = inputBusqueda.value;
-    
-          // Evento cuando se enfoca el input
-          inputBusqueda.addEventListener('focus', function() {
-            if (this.value === textoPredeterminado) {
-              this.value = '';
-            }
-          });
-    
-          // Evento cuando se pierde el foco del input
-          inputBusqueda.addEventListener('blur', function() {
-            if (this.value === '') {
-              this.value = textoPredeterminado;
-            }
-          });
-        };
-      </script>
-      <script src="JS/scriptProduct.js"></script>
+      
     </main>
     <footer>
       <div id="OrdenarHorizontal" class="FooterDivAcomodo">
@@ -240,7 +214,33 @@
   </body>
 </html>
 
+<script>
+  function abrirPagina(pagina) {
+ window.location.href = pagina;
+}
 
+window.onload = function() {
+   var inputBusqueda = document.getElementById('busqueda');
+
+   // Guardar el texto predeterminado
+   var textoPredeterminado = inputBusqueda.value;
+
+   // Evento cuando se enfoca el input
+   inputBusqueda.addEventListener('focus', function() {
+     if (this.value === textoPredeterminado) {
+       this.value = '';
+     }
+   });
+
+   // Evento cuando se pierde el foco del input
+   inputBusqueda.addEventListener('blur', function() {
+     if (this.value === '') {
+       this.value = textoPredeterminado;
+     }
+   });
+ };
+</script>
+<script src="Js/scriptProduct.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL4V3R27KH"></script>
 <script>
