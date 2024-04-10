@@ -6,45 +6,44 @@
     <link rel="stylesheet" href="Css/ForIndex.css">
     <title>INICIO | SmartHome</title>    
     <link rel="icon" type="image/png" href="Img/Logo-Title.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
         <h1><a href="index.html"><img src="Img/LogoHeader.png" alt="Logo"></a></h1>
-        
-            <button onclick="abrirPagina('CatalogoProductos.html')">Ver Productos</button>
-        
-            <nav class="menu">
-                <ul id="AcomodarHorizontales">
-                    <li><a href="index.html">Inicio</a></li>                    
-                    <li class="dropdown">
-                        <a href="#" style="margin-right: 230px;">Explorar</a>
-                        <ul class="submenu">
-                            <li><a href="CatalogoProductos.html">Iluminación Inteligente</a></li>
-                            <li><a href="CatalogoProductos.html">Electrodomesticos Inteligentes</a></li>
-                            <li><a href="CatalogoProductos.html">Climatización Inteligente</a></li>
-                            <li><a href="CatalogoProductos.html">Asistentes de Voz y Controladores</a></li>
-                        </ul>
-                    </li>   
-                    
-                    <li>
-                        <div class="BusquedaDIV">
-                            <div id="AlineadoBarra">
-                            <input id="BarraBusqueda" type="text" placeholder="Buscar...">
-                            <button id="ButtonBusqueda" type="submit"><img src="Img\IconoBusqueda.png" alt="IconoBuscar"></button>
-                            </div>
-                        </div>            
-                    </li>
-                    <li id="AcomodarHorizontales">
-                        <div id="CarritoAcomodo">
-                            <a href="CatalogoProductos.html"><img id="CarritoIcono" src="Img/CarritoCompra.png" alt="IconoCarrito"></a>
+        <button class="hamburguesa-btn">&#9776;</button> <!-- Botón de hamburguesa -->
+        <nav class="menu">
+            <ul id="AcomodarHorizontales">
+                <li><a href="index.html">Inicio</a></li>                    
+                <li class="dropdown">
+                    <a href="#" style="margin-right: 230px;">Explorar</a>
+                    <ul class="submenu">
+                        <li><a href="CatalogoProductos.html">Iluminación Inteligente</a></li>
+                        <li><a href="CatalogoProductos.html">Electrodomesticos Inteligentes</a></li>
+                        <li><a href="CatalogoProductos.html">Climatización Inteligente</a></li>
+                        <li><a href="CatalogoProductos.html">Asistentes de Voz y Controladores</a></li>
+                    </ul>
+                </li>   
+                <li>
+                    <div class="BusquedaDIV">
+                        <div id="AlineadoBarra">
+                        <input id="BarraBusqueda" type="text" placeholder="Buscar...">
+                        <button id="ButtonBusqueda" type="submit"><img src="Img\IconoBusqueda.png" alt="IconoBuscar"></button>
                         </div>
-                        <div>
+                    </div>            
+                </li>
+                <li id="AcomodarHorizontales">
+                    <div id="CarritoAcomodo">
+                        <a href="CatalogoProductos.html"><img id="CarritoIcono" src="Img/CarritoCompra.png" alt="IconoCarrito"></a>
+                    </div>
+                    <div>
                         <a href="">Iniciar Sesión</a>
-                        </div>
-                    </li>
-                </ul>
-              </nav>             
+                    </div>
+                </li>
+            </ul>
+        </nav>             
     </header>
+    
 
     <main id="MainIndex">
 
@@ -254,4 +253,17 @@ window.onload = function() {
   gtag('js', new Date());
 
   gtag('config', 'G-DL4V3R27KH');
+</script>
+
+
+<script>
+    // Obtener referencia al botón de hamburguesa y al menú
+    const hamburguesaBtn = document.querySelector('.hamburguesa-btn');
+    const menu = document.querySelector('.menu');
+
+    // Agregar evento de clic al botón de hamburguesa
+    hamburguesaBtn.addEventListener('click', () => {
+        // Alternar clase 'open' en el menú para mostrarlo u ocultarlo
+        menu.classList.toggle('open');
+    });
 </script>
