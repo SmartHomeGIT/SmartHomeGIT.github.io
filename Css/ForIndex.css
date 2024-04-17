@@ -1055,3 +1055,100 @@ input[type=number] {
         display:none;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cookie-notice {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color:#2F2E2E;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 9999;    
+}
+
+
+
+.cookie-notice p {
+    margin: 0px  40px 15px 40px;
+    color: #fff;
+    font-size: medium;
+}
+
+.cookie-notice button {
+    background-color: #44DBBD;
+    color: #fff;
+    border: none;
+    padding: 10px 30px  ;
+    font-size: 16px;
+    cursor: pointer; 
+    margin-right: 30px; 
+    border-radius: 10px;  
+}
+
+.cookie-notice button:hover {
+    background-color: #009295;
+}

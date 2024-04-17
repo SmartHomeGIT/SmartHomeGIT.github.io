@@ -204,7 +204,25 @@
 
             </div>
         </footer>
-
+        <div class="cookie-notice" id="cookie-notice">
+            <div id="OrdenarHorizontal">
+                <p>
+                    Este sitio web utiliza cookies para mejorar tu experiencia de usuario. 
+                    Al continuar navegando por el sitio, aceptas nuestro uso de cookies. 
+                    Para más información sobre el uso de tus datos personales y tus derechos 
+                    conforme a la 
+                    <span style="text-decoration: underline; cursor: pointer;"> 
+                        Ley Federal de Protección de Datos Personales  
+                    </span>en 
+                    Posesión de los Particulares de México, consulta nuestra 
+                    <span style="text-decoration: underline; cursor: pointer;"> política de privacidad.</span>
+                    
+                
+                </p>
+                <button onclick="aceptarCookies()">Aceptar</button>
+            </div>
+        </div>
+        
 
     </main>
 </body>
@@ -267,3 +285,13 @@ window.onload = function() {
         menu.classList.toggle('open');
     });
 </script>
+
+    <script>
+        function aceptarCookies() {
+
+            var cookieNotice = document.getElementById('cookie-notice');
+            cookieNotice.style.display = 'none';
+
+        }
+    </script>
+
