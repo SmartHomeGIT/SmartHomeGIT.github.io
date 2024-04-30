@@ -501,7 +501,18 @@ footer{
 #FooterDivUno p{
     color: #2F2E2E;
     font-family: 'Avenir';
-    text-decoration: underline 1px;
+    text-decoration: underline 1px #2F2E2E;
+    cursor: pointer;
+}
+
+#FooterDivUno p:hover{
+    color: #009295;
+    text-decoration: underline black;
+}
+
+
+#FooterDivUno a{
+    text-decoration: none;
 }
 
 #FooterDivUno p:nth-child(5){
