@@ -144,18 +144,19 @@
             </div>
             <div>
                 <div id="OrdenarHorizontal" style="justify-content: space-evenly;">
-                    <div id="TarjetaProducto">                        
-                        <a href="Producto.html"><img src="Img/Amazon Echo Alexa 4ta Generación Negro foto1.jpeg" alt="Asistentes" title="Amazon Echo Alexa 4ta Generación Negro"></a>
+                    <div id="TarjetaProducto" onclick="abrirPagina('Producto.html')">                        
+                        <img src="Img/Amazon Echo Alexa 4ta Generación Negro foto1.jpeg" alt="Asistentes" title="Amazon Echo Alexa 4ta Generación Negro">
                         <h1>Amazon Echo Alexa 4ta Generación Negro</h1>
                         <p>Precio: $2,499.00</p>
                     </div>
-                    <div id="TarjetaProducto">
-                        <a href="Producto.html"><img src="Img/Productos/FreidoraEléctrica.jpg" alt="FreidoraEléctrica" title="Freidora Eléctrica Inteligente De Gran Capacidad De 16 L"></a>
+                    <div id="TarjetaProducto" onclick="abrirPagina('Producto.html')">
+    
+                        <img src="Img/Productos/FreidoraEléctrica.jpg" alt="FreidoraEléctrica" title="Freidora Eléctrica Inteligente De Gran Capacidad De 16 L">
                         <h1>Freidora Eléctrica Inteligente De Gran Capacidad De 16 L</h1>
                         <p>Precio: $1,989.00</p>
                     </div>
-                    <div id="TarjetaProducto">                        
-                        <a href="Producto.html"><img src="Img/Productos/FocoInteligente.jpg" alt="Asistentes" title="MoesGo Foco Inteligente WiFi"></a>
+                    <div id="TarjetaProducto" onclick="abrirPagina('Producto.html')">                        
+                        <img src="Img/Productos/FocoInteligente.jpg" alt="Asistentes" title="MoesGo Foco Inteligente WiFi">
                         <h1>MoesGo Foco Inteligente WiFi </h1>
                         <p>Precio: $2,499.00</p>
                     </div>                                        
@@ -233,36 +234,6 @@
     </main>
 </body>
 </html>
-<script>
-
-    function abrirPagina(pagina) {
-    window.location.href = pagina;
-}   
-
-window.onload = function() {
-      var inputBusqueda = document.getElementById('busqueda');
-
-      // Guardar el texto predeterminado
-      var textoPredeterminado = inputBusqueda.value;
-
-      // Evento cuando se enfoca el input
-      inputBusqueda.addEventListener('focus', function() {
-        if (this.value === textoPredeterminado) {
-          this.value = '';
-        }
-      });
-
-      // Evento cuando se pierde el foco del input
-      inputBusqueda.addEventListener('blur', function() {
-        if (this.value === '') {
-          this.value = textoPredeterminado;
-        }
-      });
-    };
-
-
-
-</script>
 <style>
     @font-face {
     font-family: 'Avenir';
@@ -271,33 +242,6 @@ window.onload = function() {
 </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL4V3R27KH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-DL4V3R27KH');
-</script>
-
-
-<script>
-    // Obtener referencia al botón de hamburguesa y al menú
-    const hamburguesaBtn = document.querySelector('.hamburguesa-btn');
-    const menu = document.querySelector('.menu');
-
-    // Agregar evento de clic al botón de hamburguesa
-    hamburguesaBtn.addEventListener('click', () => {
-        // Alternar clase 'open' en el menú para mostrarlo u ocultarlo
-        menu.classList.toggle('open');
-    });
-</script>
-
-    <script>
-        function aceptarCookies() {
-
-            var cookieNotice = document.getElementById('cookie-notice');
-            cookieNotice.style.display = 'none';
-
-        }
-    </script>
+    <script src="Js/IndexJS.js"></script>
 

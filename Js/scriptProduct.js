@@ -60,6 +60,7 @@
         // Agregar evento de clic al corazón
         document.querySelector('.heart').addEventListener('click', toggleLike);
 
+        /*
         // Actualizar precio del producto cuando se cambia la cantidad
         const priceElement = document.getElementById('precio-producto');
         const cantidadInput = document.getElementById('cantidad');
@@ -69,4 +70,4 @@
             const nuevaCantidad = parseInt(this.value);
             const nuevoPrecio = precioBase * nuevaCantidad;
             priceElement.textContent = '$' + nuevoPrecio.toFixed(2); // Formatear el precio con dos decimales
-        });
+        });*/
