@@ -5,7 +5,7 @@ async function Submit(event) {
     const password = document.getElementById('password').value;
 
     try{
-        const Archivo = await fetch('../Json/Usuarios.json');
+        const Archivo = await fetch('./Json/Usuarios.json');
         const Usuarios = await Archivo.json();
 
 
@@ -22,4 +22,27 @@ async function Submit(event) {
     }
 }
 
+// es solo para que brinque de campos cuando se le de enter
+document.getElementById('email').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        document.getElementById('password').focus();
+        event.preventDefault();
+    }
+});
+
+document.getElementById('password').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        Submit(event);
+        event.preventDefault();
+    }
+});
+
+
+
+
+
 document.getElementById('BotonIniciarSesion').addEventListener('click', Submit);
+
+function abrirPagina(pagina) {
+    window.location.href = pagina;
+}

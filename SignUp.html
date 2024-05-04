@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/Login.css">
-    <title>SmartHome | Iniciar Sesión</title>
+    <title>SmartHome | Registrarse</title>
 </head>
 <body>
     <main>
@@ -13,10 +13,10 @@
                 <a href="index.html" id="regresar">
                     <p>x</p>
                 </a>
-                <h1>Iniciar Sesión</h1>
-                <p>Es tu primera vez? 
+                <h1>Registrarse</h1>
+                <p>Ya tienes una cuenta? 
                     <span> 
-                <a href="SignUp.html">Regístrate</a>   
+                <a href="Login.html">Inicia Sesión</a>   
                     </span>
                 </p>
             </div>
@@ -29,11 +29,14 @@
                     <p>Contraseña *</p>
                     <input type="password" id="password" placeholder="Contraseña">
                 </div>
-                <p>¿Olvidaste la contraseña?</p>                                            
+                <div>
+                    <p>Vuelve A Escribir La Contraseña *</p>
+                    <input type="password" id="password2" placeholder="Confirmar Contraseña">
+                </div>                                                           
             </div>
             <div class="Boton-logos">
                 <div>
-                    <button id="BotonIniciarSesion">Iniciar Sesión</button>
+                    <button id="BotonIniciarSesion">Registrarse</button>
                 </div>
                
             </div>
@@ -47,4 +50,4 @@
     src: url('Fonts/AvenirNextLight.ttf') format('truetype');
 }
 </style>
-<script src="Js/Login.js"></script>
+<script src="Js/SignUp.js"></script>
