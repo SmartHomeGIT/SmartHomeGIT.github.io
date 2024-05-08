@@ -1,0 +1,1 @@
+const idusuario = document.getElementById('UsuarioMostrarIndex');

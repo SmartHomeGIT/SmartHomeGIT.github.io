@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Css/ForIndex.css">
+    <link rel="stylesheet" href="Css/Carrito.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra | SmartHome</title>
+</head>
+<body>
+    <header style=" z-index: 999 /*es para que quede por encima de todos los elementos y no haya fallas*/;">
+        <h1><a href="index.html" title="Redireccion a pagina principal"><img src="Img/LogoHeader.png" alt="Logo" title="Logo SmartHome"></a></h1>
+        <button class="hamburguesa-btn">&#9776;</button> <!-- Botón de hamburguesa -->
+        <nav class="menu">
+            <ul id="AcomodarHorizontales">
+                <li><a href="index.html" title="Redireccion a pagina principal">Inicio</a></li>                    
+                <li class="dropdown">
+                    <a href="CatalogoProductos.html" style="margin-right: 230px;">Explorar</a>
+                    <ul class="submenu">
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaIluminacion()">Iluminación Inteligente</a></li>
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaElectInteligentes()">Electrodomesticos Inteligentes</a></li>
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaClimaInteligente()">Climatización Inteligente</a></li>
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaAsistentes()">Asistentes de Voz y Controladores</a></li>
+                    </ul>
+                </li>   
+                <li>
+                    <div class="BusquedaDIV">
+                        <div id="AlineadoBarra">
+                        <input id="BarraBusqueda" type="text" placeholder="Buscar...">
+                        <button id="ButtonBusqueda" type="submit"><img src="Img\IconoBusqueda.png" alt="IconoBuscar" title="Icono Busqueda" oninput="buscarProductos()"></button>
+                        </div>
+                        <ul id="resultados"></ul>
+                    </div>            
+                </li>
+                <li id="AcomodarHorizontales">
+                    <div id="CarritoAcomodo">
+                        <a href="CarritoDeCompra.html" title="Redireccion a carrito"><img id="CarritoIcono" src="Img/CarritoCompra.png" alt="IconoCarrito" title="Icono Carrito"></a>
+                    </div>
+                    <div>
+                        <li class="dropdown">
+                            <a href="Login.html" id="UsuarioMostrarIndex">Iniciar Sesión</a>                            
+                            <ul class="submenu2" id="ListaUsuario">
+                                <li><a href="Usuario.html" title="Redireccion a Datos de Usuario">Cuenta</a></li>
+                                <li><a href="ListaDeseos.html" title="Redireccion a Lista de deseos">Lista de deseos</a></li>
+                                <li><a href="OrdenesCompra.html" title="Redireccion a Ordenes de Compras">Historial de Compras</a></li>
+                                <li><a href="Login.html" title="CarrarSesion" onclick="CerrarSesion()">Cerrar Sesion</a></li>                        
+                    </div>
+                </li>
+            </ul>
+        </nav>             
+    </header>
+
+    <main>
+        <h1>Carrito de Compras</h1>
+        <div id="ContenidoCarrito">    
+                <table id="carrito-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 10%;"></th>
+                            <th style="width: 20%;">Producto</th>
+                            <th style="width: 10%;">Precio</th>
+                            <th style="width: 5%;">Cantidad</th>
+                            <th style="width: 10%;">Subtotal</th>
+                            <th style="width: 10%;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Recibo">
+                <div>
+                    <div id="totales-div"></div>
+                    <button id="proceder-pago-btn">Proceder al Pago</button>
+                </div>
+                
+            </div>
+            
+
+    </main>
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div id="OrdenarHorizontal" class="FooterDivAcomodo">
+
+          <div id="FooterDivUno" style="margin-right: 50px;">
+            <p>FAQ</p>
+            <a href="https://www.facebook.com/people/SmartHome/61558822961209"><p>CONTACTAR</p></a>
+            <a href="CatalogoProductos.html"><p style="padding-top: 90px;">Veamos los Productos</p></a>
+            <div id="OrdenarHorizontal" style="justify-content: space-between; padding-top: 100px;">
+                <a href="https://www.facebook.com/people/SmartHome/61558822961209">
+                    <img src="Img/FacebookLogo.png" alt="FBLOGO" title="Icono Facebook SmartHome" style="width: 25px; height: auto;">
+                </a>
+                <img src="Img/TwitterLogo.png" alt="TWLOGO" title="Icono Twitter SmartHome" style="width: 25px; height: auto;">
+                <img src="Img/YoutubeLogo.png" alt="YTLogo" title="Icono Youtube SmartHome" style="width: 25px; height: auto;">
+            </div>
+            <p>© 2024 SMARTHOME</p>
+        </div>
+                
+            <div id="FooterDivDos" style="margin-right: 50px;">
+                <p>NOSOTROS</p>
+                <p>SmartHome es tu tienda online de <br>accesorios para hogar inteligente lider <br>en la industria, siempre trabajando con <br>las mejores marcas para llegar a ti.</p>
+                <ul>
+                    <li>Lideres en la industria</li>
+                    <li>Compras 100% seguras</li>
+                    <li>Entregas garantizadas</li>
+                </ul>
+            </div>
+
+            <div id="FooterDivTres">
+                <p>NOVEDADES</p>
+                <p>Registrate con nosotros para recibir informacion <br>acerca de nuestros nuevos productos, los recien <br>llegados y los que estan por llegar, mantente al<br> pendiente de nuestras novedades.</p>
+                <div>
+                    <input id="FooterCorreoElectronicoBarra" type="text" name="CorreoElectronico" placeholder="Ingresa tu email aquí*">                        
+                </div>                    
+                <button>Unirse</button>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
+
+<script src="Js/CategoriasMenu.js"></script>
+<script src="Js/Sesion.js"></script>
+<script src="Js/BarraBusqueda.js"></script>
+<script src="Js/CarritoCompras.js"></script>
+
+<style>
+    @font-face {
+    font-family: 'Avenir';
+    src: url('Fonts/AvenirNextLight.ttf') format('truetype');
+}
+</style>

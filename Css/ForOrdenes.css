@@ -1,0 +1,39 @@
+body{
+    font-family: 'Avenir';
+}
+main{
+    margin-top: 50px ;
+    padding: 30px;
+}
+#SectionHistorial{
+    padding-inline: 100px;
+
+}
+#ArticleDatosCompras{
+    display: flex;
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: start;
+    border-bottom: 1px #858282 solid;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #dddddd;
+}
+
+#Historial-table img {
+    width: 80%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}

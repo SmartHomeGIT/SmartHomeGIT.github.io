@@ -22,28 +22,35 @@
             <ul id="AcomodarHorizontales">
                 <li><a href="index.html" title="Redireccion a pagina principal">Inicio</a></li>                    
                 <li class="dropdown">
-                    <a href="#" style="margin-right: 230px;">Explorar</a>
+                    <a href="CatalogoProductos.html" style="margin-right: 230px;">Explorar</a>
                     <ul class="submenu">
-                        <li><a href="CatalogoProductos.html" title="Redireccion a Catalogo">Iluminación Inteligente</a></li>
-                        <li><a href="CatalogoProductos.html" title="Redireccion a Catalogo">Electrodomesticos Inteligentes</a></li>
-                        <li><a href="CatalogoProductos.html" title="Redireccion a Catalogo">Climatización Inteligente</a></li>
-                        <li><a href="CatalogoProductos.html" title="Redireccion a Catalogo">Asistentes de Voz y Controladores</a></li>
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaIluminacion()">Iluminación Inteligente</a></li>
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaElectInteligentes()">Electrodomesticos Inteligentes</a></li>
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaClimaInteligente()">Climatización Inteligente</a></li>
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaAsistentes()">Asistentes de Voz y Controladores</a></li>
                     </ul>
                 </li>   
                 <li>
                     <div class="BusquedaDIV">
                         <div id="AlineadoBarra">
                         <input id="BarraBusqueda" type="text" placeholder="Buscar...">
-                        <button id="ButtonBusqueda" type="submit"><img src="Img\IconoBusqueda.png" alt="IconoBuscar" title="Icono Busqueda"></button>
+                        <button id="ButtonBusqueda" type="submit"><img src="Img\IconoBusqueda.png" alt="IconoBuscar" title="Icono Busqueda" oninput="buscarProductos()"></button>
                         </div>
+                        <ul id="resultados"></ul>
                     </div>            
                 </li>
                 <li id="AcomodarHorizontales">
                     <div id="CarritoAcomodo">
-                        <a href="CatalogoProductos.html" title="Redireccion a Catalogo"><img id="CarritoIcono" src="Img/CarritoCompra.png" alt="IconoCarrito" title="Icono Carrito"></a>
+                        <a href="CarritoDeCompra.html" title="Redireccion a carrito"><img id="CarritoIcono" src="Img/CarritoCompra.png" alt="IconoCarrito" title="Icono Carrito"></a>
                     </div>
                     <div>
-                        <a href="Login.html">Iniciar Sesión</a>
+                        <li class="dropdown">
+                            <a href="Login.html" id="UsuarioMostrarIndex">Iniciar Sesión</a>                            
+                            <ul class="submenu2" id="ListaUsuario">
+                                <li><a href="Usuario.html" title="Redireccion a Datos de Usuario">Cuenta</a></li>
+                                <li><a href="ListaDeseos.html" title="Redireccion a Lista de deseos">Lista de deseos</a></li>
+                                <li><a href="OrdenesCompra.html" title="Redireccion a Ordenes de Compras">Historial de Compras</a></li>
+                                <li><a href="Login.html" title="CarrarSesion" onclick="CerrarSesion()">Cerrar Sesion</a></li>                        
                     </div>
                 </li>
             </ul>
@@ -244,4 +251,6 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL4V3R27KH"></script>
 
     <script src="Js/IndexJS.js"></script>
+    <script src="Js/Sesion.js"></script>
+    <script src="Js/CategoriasMenu.js"></script>
 

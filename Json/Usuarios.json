@@ -1,10 +1,93 @@
 [
     {
-        "email": "JavierProa@NegociosElectronicos1.com",
-        "password": "Proa1234"
+        "id": 1,
+        "email": "JavierProa@NegociosElectronicos.com",
+        "password": "Proa1234",
+        "nombre" : "Javier",
+        "apellido" : "Proa",
+        "direccion": "SmartHome-Company",
+        "role": "admin"
+
     },
     {
-        "email": "MartinTiscareño@NegociosElectronicos1.com",
-        "password": "Ortiz1234"
+        "id": 2,
+        "email": "MartinTiscareño@NegociosElectronicos.com",
+        "password": "Ortiz1234",
+        "nombre" : "Martin",
+        "apellido" : "Ortiz",
+        "direccion": "SmartHome-Company",
+        "role": "admin"
+    },
+    {
+        "id": 3,
+        "email": "MikeG@hotmail.com",
+        "password": "Mike855G",
+        "nombre" : "Mike",
+        "apellido" : "Golovkin",
+        "direccion": "Aguascalientes, Ags. AV WiliamST #892",
+        "role": "user"
+    },
+    {
+        "id": 4,
+        "email": "AlfredoG@Gmail.com",
+        "password": "Amessi1234",
+        "nombre" : "Alfredo",
+        "apellido" : "Giacinti",
+        "direccion": "Aguascalientes, Ags. Fracc. Mexico, Calle Chiapas #9999 ",
+        "role": "user"
+    },
+    {
+        "id": 5,
+        "email": "PabPerezCH@gmail.com",
+        "password": "Pab10sem",
+        "nombre" : "Pablo",
+        "apellido" : "Perezchica",
+        "direccion": "Aguascalientes, Ags. Av. Tecnologico #804",
+        "role": "user"
+    },
+    {
+        "id": 6,
+        "email": "AlejandraSalas2002@gmail.com",
+        "password": "Aleja1234",
+        "nombre" : "Alejandra",
+        "apellido" : "Salas",
+        "direccion": "Aguascalientes, Ags. Av. RodL #209",
+        "role": "user"
+    },
+    {
+        "id": 7,
+        "email": "yahirCH@gmail.com",
+        "password": "Yach22",
+        "nombre" : "Yahir",
+        "apellido" : "Chavez",
+        "direccion": "Aguascalientes, Ags. Av. Siglo XXI #2945",
+        "role": "user"
+    },
+    {
+        "id": 8,
+        "email": "RicardoMayRO@Gmail.com",
+        "password": "Richiart",
+        "nombre" : "Ricardo",
+        "apellido" : "Mayorga",
+        "direccion": "Aguascalientes, Ags. Av. Convencion #708",
+        "role": "user"
+    },
+    {
+        "id": 9,
+        "email": "AndreMor@gmail.com",
+        "password": "Anmo44",
+        "nombre" : "Andre",
+        "apellido" : "Morales",
+        "direccion": "Aguascalientes, Ags. Av. Lopez Mateos #406",
+        "role": "user"
+    },
+    {
+        "id": 10,
+        "email": "SantiSe65@gmail.com",
+        "password": "Crampo221",
+        "nombre" : "Santiago",
+        "apellido" : "Espinoza",
+        "direccion": "Aguascalientes, Ags. Av. ojocaliente #892",
+        "role": "user"
     }
 ]

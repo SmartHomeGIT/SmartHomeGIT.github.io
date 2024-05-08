@@ -9,34 +9,41 @@
 </head>
     <body id="IndexBody">
       <header style=" z-index: 999 /*es para que quede por encima de todos los elementos y no haya fallas*/;">
-        <h1><a href="index.html"><img src="Img/LogoHeader.png" alt="Logo" title="Logo SmartHome"></a></h1>
+        <h1><a href="index.html" title="Redireccion a pagina principal"><img src="Img/LogoHeader.png" alt="Logo" title="Logo SmartHome"></a></h1>
         <button class="hamburguesa-btn">&#9776;</button> <!-- Botón de hamburguesa -->
         <nav class="menu">
             <ul id="AcomodarHorizontales">
-                <li><a href="index.html">Inicio</a></li>                    
+                <li><a href="index.html" title="Redireccion a pagina principal">Inicio</a></li>                    
                 <li class="dropdown">
-                    <a href="#" style="margin-right: 230px;">Explorar</a>
+                    <a href="CatalogoProductos.html" style="margin-right: 230px;">Explorar</a>
                     <ul class="submenu">
-                        <li><a href="CatalogoProductos.html">Iluminación Inteligente</a></li>
-                        <li><a href="CatalogoProductos.html">Electrodomesticos Inteligentes</a></li>
-                        <li><a href="CatalogoProductos.html">Climatización Inteligente</a></li>
-                        <li><a href="CatalogoProductos.html">Asistentes de Voz y Controladores</a></li>
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaIluminacion()">Iluminación Inteligente</a></li>
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaElectInteligentes()">Electrodomesticos Inteligentes</a></li>
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaClimaInteligente()">Climatización Inteligente</a></li>
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaAsistentes()">Asistentes de Voz y Controladores</a></li>
                     </ul>
                 </li>   
                 <li>
                     <div class="BusquedaDIV">
                         <div id="AlineadoBarra">
                         <input id="BarraBusqueda" type="text" placeholder="Buscar...">
-                        <button id="ButtonBusqueda" type="submit"><img src="Img\IconoBusqueda.png" alt="IconoBuscar" title="Icono Busqueda SmartHome"></button>
+                        <button id="ButtonBusqueda" type="submit"><img src="Img\IconoBusqueda.png" alt="IconoBuscar" title="Icono Busqueda" oninput="buscarProductos()"></button>
                         </div>
+                        <ul id="resultados"></ul>
                     </div>            
                 </li>
                 <li id="AcomodarHorizontales">
                     <div id="CarritoAcomodo">
-                        <a href="CatalogoProductos.html"><img id="CarritoIcono" src="Img/CarritoCompra.png" alt="IconoCarrito" title="Icono Carrito SmartHome"></a>
+                        <a href="CarritoDeCompra.html" title="Redireccion a carrito"><img id="CarritoIcono" src="Img/CarritoCompra.png" alt="IconoCarrito" title="Icono Carrito"></a>
                     </div>
                     <div>
-                        <a href="">Iniciar Sesión</a>
+                        <li class="dropdown">
+                            <a href="Login.html" id="UsuarioMostrarIndex">Iniciar Sesión</a>                            
+                            <ul class="submenu2" id="ListaUsuario">
+                                <li><a href="Usuario.html" title="Redireccion a Datos de Usuario">Cuenta</a></li>
+                                <li><a href="ListaDeseos.html" title="Redireccion a Lista de deseos">Lista de deseos</a></li>
+                                <li><a href="OrdenesCompra.html" title="Redireccion a Ordenes de Compras">Historial de Compras</a></li>
+                                <li><a href="Login.html" title="CarrarSesion" onclick="CerrarSesion()">Cerrar Sesion</a></li>                        
                     </div>
                 </li>
             </ul>
@@ -84,141 +91,7 @@
             
             <article style="margin-top: 100px;">
                 <div class="product-container">
-                    <!-- Contenido de los productos -->
-                    <div class="product-data product-box">
-                      <div class = "divImagenCatalogo">
-                        <a href="Producto.html"><img
-                          src="Img/Productos/AmazoneEcho.jpg"
-                          alt="Amazon Echo Pop Altavoz inteligente con Alexa 1ra Gen 2023 Glaciar Blanco"
-                          title="Amazon Echo Pop Altavoz inteligente con Alexa 1ra Gen 2023 Glaciar Blanco"
-                        /></a>
-                      </div>
-                      <h3>
-                        Amazon Echo Pop Altavoz inteligente con Alexa 1ra Gen 2023 Glaciar
-                        Blanco
-                      </h3>
-                      <p data-price="699.00">Precio: $699.00</p>
-                    </div>
-                    <!-- 2-------------------------------------------------------------------------------------------- -->
-                    <div class="product-data product-box">
-                      <div class = "divImagenCatalogo">
-                        <a href="Producto.html"><img
-                          src="Img/Productos/AmazoneEchoAlexa.jpg"
-                          alt="Amazon Echo Alexa 4ta Generación Negro"
-                          title="Amazon Echo Alexa 4ta Generación Negro"
-                        /></a>
-                      </div>                      
-                      <h3>Amazon Echo Alexa 4ta Generación Negro</h3>
-                      <p data-price="2499.00">Precio: $2,499.00</p>
-                    </div>
-                    <!-- 3-------------------------------------------------------------------------------------------- -->
-                    <div class="product-data product-box">
-                      <div class = "divImagenCatalogo">
-                        <a href="Producto.html"><img
-                          src="Img/Productos/VentiladorDeCalentador.jpg"
-                          alt="Ventilador De Calentador Y Purificador Y Enfriadora, 35pul Diámetro 89
-                          Cm"
-                          title="Ventilador De Calentador Y Purificador Y Enfriadora, 35pul Diámetro 89
-                          Cm"
-                        /></a>
-                      </div>
-                     
-                      <h3>
-                        Ventilador De Calentador Y Purificador Y Enfriadora, 35pul Diámetro 89
-                        Cm
-                      </h3>
-                      <p data-price="3,280.00">Precio: $3,280.00</p>
-                    </div>
-                    <!-- 4-------------------------------------------------------------------------------------------- -->
-                    <div class="product-data product-box">
-                      <div class = "divImagenCatalogo">
-                        <a href="Producto.html">
-                          <img src="Img/Productos/Sensedge.jpg" 
-                          alt="Sensedge & Sensedge Mini" 
-                          title="Sensedge & Sensedge Mini"/>                      
-                        </a>
-                      </div>
-                      <h3>Sensedge & Sensedge Mini</h3>
-                      <p data-price="35,279.00">Precio: $35,279.00</p>
-                    </div>
-              
-                    <!-- 5-------------------------------------------------------------------------------------------- -->
-                    <div class="product-data product-box">
-                      <div class = "divImagenCatalogo">
-                        <a href="Producto.html"><img
-                          src="Img/Productos/PurificadoresDeAire.jpg"
-                          alt="Purificadores De Aire Para Dormitorio, Control Inteligente W"
-                          title="Purificadores De Aire Para Dormitorio, Control Inteligente W"
-                        /></a>
-                      </div>                      
-                      <h3>Purificadores De Aire Para Dormitorio, Control Inteligente W</h3>
-                      <p data-price="9,003.00">Precio: $9,003.00</p>
-                    </div>
-              
-                    <!-- 6-------------------------------------------------------------------------------------------- -->
-                    <div class="product-data product-box">
-                      <div class = "divImagenCatalogo">
-                        <a href="Producto.html"><img
-                          src="Img/Productos/Lavasecadora.jpg"
-                          alt="Lavasecadora Hisense electrónica 15 kg WDQT1514"
-                          alt="Lavasecadora Hisense electrónica 15 kg WDQT1514"
-                          title="Lavasecadora Hisense electrónica 15 kg WDQT1514"
-                        /></a>
-                      </div>
-                      <h3>Lavasecadora Hisense electrónica 15 kg WDQT1514</h3>
-                      <p data-price="13,719.00">Precio: $13,719.00</p>
-                    </div>
-              
-                    <!-- 7-------------------------------------------------------------------------------------------- -->
-                    <div class="product-data product-box">
-                      <div class = "divImagenCatalogo">
-                        <a href="Producto.html"><img
-                          src="Img/Productos/FreidoraEléctrica.jpg"
-                          alt="Freidora Eléctrica Inteligente De Gran Capacidad De 16 L"
-                          title="Freidora Eléctrica Inteligente De Gran Capacidad De 16 L"
-                        /></a>
-                      </div>                      
-                      <h3>Freidora Eléctrica Inteligente De Gran Capacidad De 16 L</h3>
-                      <p data-price="1,989.00">Precio: $1,989.00</p>
-                    </div>
-                    <!-- 8-------------------------------------------------------------------------------------------- -->
-                    <div class="product-data product-box">
-                      <div class = "divImagenCatalogo">
-                        <a href="Producto.html"><img
-                          src="Img/Productos/+360.jpg"
-                          alt="+ 360 C50 Robot Aspiradora y fregona"
-                          title="+ 360 C50 Robot Aspiradora y fregona"
-                        /></a>
-                      </div>                      
-                      <h3>+ 360 C50 Robot Aspiradora y fregona</h3>
-                      <p data-price="2,999.00">Precio: $2,999.00</p>
-                    </div>
-                    <!-- 9-------------------------------------------------------------------------------------------- -->
-                    <div class="product-data product-box">
-                      <div class = "divImagenCatalogo">
-                        <a href="Producto.html"><img
-                          src="Img/Productos/FocoInteligente.jpg"
-                          alt="MoesGo Foco Inteligente WiFi"
-                          title="MoesGo Foco Inteligente WiFi"
-                        /></a>
-                      </div>                      
-                      <h3>MoesGo Foco Inteligente WiFi</h3>
-                      <p data-price="388.00">Precio: $388.00</p>
-                    </div>
-                    <!-- 10-------------------------------------------------------------------------------------------- -->
-                    <div class="product-data product-box">
-                      <div class = "divImagenCatalogo">
-                        <a href="Producto.html"><img
-                          src="Img/Productos/Refrigerador.jpg"
-                          alt=" Refrigerador Side By Side 22 pies con Pantalla Family Hub Acero oscuro"
-                          title=" Refrigerador Side By Side 22 pies con Pantalla Family Hub Acero oscuro"
-                        /></a>
-                      </div>                      
-                      <h3>
-                        Refrigerador Side By Side 22 pies con Pantalla Family Hub Acero oscuro
-                      </h3>
-                      <p data-price="35,099.00">Precio: $35,099.00</p>
-                    </div>
+                    
                   </div>
             </article> 
                                                                    
@@ -324,3 +197,5 @@
       menu.classList.toggle('open');
   });
 </script>
+<script src="Js/Sesion.js"></script>
+<script src="Js/CategoriasMenu.js"></script>

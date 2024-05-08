@@ -11,10 +11,15 @@ async function Submit(event) {
 
         const usuario = Usuarios.find(usuario => usuario.email.toLowerCase() === email);
         if (usuario && usuario.password === password) {
-            alert('inicio ok')
+            sessionStorage.setItem('email',usuario.email );
+            alert('Se inicio Sesion Exitosamente, Redirigiendo...');            
+            abrirPagina('index.html');
         }
         else{
+            document.getElementById('email').style.border = '2px solid red';
+            document.getElementById('password').style.border = '2px solid red';
             alert('Correo Electronico o Contraseña Incorrectos')
+            
         }
     }catch (error){
         console.error('Error al cargar los datos de los usuarios:', error);
@@ -27,6 +32,8 @@ document.getElementById('email').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         document.getElementById('password').focus();
         event.preventDefault();
+        document.getElementById('email').style.border = '1px solid black';
+            document.getElementById('password').style.border = '1px solid black';
     }
 });
 
@@ -42,6 +49,7 @@ document.getElementById('password').addEventListener('keydown', function(event) 
 
 
 document.getElementById('BotonIniciarSesion').addEventListener('click', Submit);
+
 
 function abrirPagina(pagina) {
     window.location.href = pagina;

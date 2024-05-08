@@ -1,0 +1,135 @@
+[
+
+        {
+          "id": 1,
+          "nombre": "Amazon Echo Pop Altavoz inteligente con Alexa 1ra Gen 2023 Glaciar Blanco",
+          "precio": 699.00,
+          "categoria": "Asistentes de Voz y Controladores",
+          "imagen": "Img/Productos/AmazoneEcho.jpg",
+          "imagen2": "Img/Productos/AmazoneEcho.jpg",
+          "imagen3": "Img/Productos/AmazoneEcho.jpg",
+          "descripcion": "Amazon Echo Pop Altavoz inteligente con Alexa 1ra Gen 2023 Glaciar Blanco",
+          "url": "Producto.html",
+          "reseña1":"me encanto el producto, super recomendado",
+          "reseña2":"lo volveria a comprar, me hice fan de esto"
+        },
+        {
+          "id": 2,
+          "nombre": "Amazon Echo Alexa 4ta Generación Negro",
+          "precio": 2499.00,
+          "categoria": "Asistentes de Voz y Controladores",
+          "imagen": "Img/Productos/AmazoneEchoAlexa.jpg",
+          "imagen2": "Img/Productos/AmazoneEchoAlexa.jpg",
+          "imagen3": "Img/Productos/AmazoneEchoAlexa.jpg",
+          "descripcion": "Amazon Echo Alexa 4ta Generación Negro",
+          "url": "Producto.html",
+          "reseña1":"me encanto el producto, super recomendado",
+          "reseña2":"lo volveria a comprar, me hice fan de esto"
+        },
+        {
+          "id": 3,
+          "nombre": "Ventilador De Calentador Y Purificador Y Enfriadora, 35pul Diámetro 89 Cm",
+          "precio": 3280.00,
+          "categoria": "Climatizacion inteligente",
+          "imagen": "Img/Productos/VentiladorDeCalentador.jpg",
+          "imagen2": "Img/Productos/VentiladorDeCalentador.jpg",
+          "imagen3": "Img/Productos/VentiladorDeCalentador.jpg",
+          "descripcion": "Ventilador De Calentador Y Purificador Y Enfriadora, 35pul Diámetro 89 Cm",
+          "url": "Producto.html",
+          "reseña1":"me encanto el producto, super recomendado",
+          "reseña2":"lo volveria a comprar, me hice fan de esto"
+        },
+        {
+          "id": 4,
+          "nombre": "Sensedge & Sensedge Mini",
+          "precio": 35279.00,
+          "categoria": "Climatizacion inteligente",
+          "imagen": "Img/Productos/Sensedge.jpg",
+          "imagen2": "Img/Productos/Sensedge.jpg",
+          "imagen3": "Img/Productos/Sensedge.jpg",
+          "descripcion": "Sensedge & Sensedge Mini",
+          "url": "Producto.html",
+          "reseña1":"me encanto el producto, super recomendado",
+          "reseña2":"lo volveria a comprar, me hice fan de esto"
+        },
+        {
+          "id": 5,
+          "nombre": "Purificadores De Aire Para Dormitorio, Control Inteligente W",
+          "precio": 9003.00,
+          "categoria": "Climatizacion inteligente",
+          "imagen": "Img/Productos/PurificadoresDeAire.jpg",
+          "imagen2": "Img/Productos/PurificadoresDeAire.jpg",
+          "imagen3": "Img/Productos/PurificadoresDeAire.jpg",
+          "descripcion": "Purificadores De Aire Para Dormitorio, Control Inteligente W",
+          "url": "Producto.html",
+          "reseña1":"me encanto el producto, super recomendado",
+          "reseña2":"lo volveria a comprar, me hice fan de esto"
+        },
+        {
+          "id": 6,
+          "nombre": "Lavasecadora Hisense electrónica 15 kg WDQT1514",
+          "precio": 13719.00,
+          "categoria": "Electrodomesticos Inteligentes",
+          "imagen": "Img/Productos/Lavasecadora.jpg",
+          "imagen2": "Img/Productos/Lavasecadora.jpg",
+          "imagen3": "Img/Productos/Lavasecadora.jpg",
+          "descripcion": "Lavasecadora Hisense electrónica 15 kg WDQT1514",
+          "url": "Producto.html",
+          "reseña1":"me encanto el producto, super recomendado",
+          "reseña2":"lo volveria a comprar, me hice fan de esto"
+        },
+        {
+          "id": 7,
+          "nombre": "Freidora Eléctrica Inteligente De Gran Capacidad De 16 L",
+          "precio": 1989.00,
+          "categoria": "Electrodomesticos Inteligentes",
+          "imagen": "Img/Productos/FreidoraEléctrica.jpg",
+          "imagen2": "Img/Productos/FreidoraEléctrica.jpg",
+          "imagen3": "Img/Productos/FreidoraEléctrica.jpg",
+          "descripcion": "Freidora Eléctrica Inteligente De Gran Capacidad De 16 L",
+          "url": "Producto.html",
+          "reseña1":"me encanto el producto, super recomendado",
+          "reseña2":"lo volveria a comprar, me hice fan de esto"
+        },
+        {
+          "id": 8,
+          "nombre": "+360 C50 Robot Aspiradora y fregona",
+          "precio": 2999.00,
+          "categoria": "Electrodomesticos Inteligentes",
+          "imagen": "Img/Productos/+360.jpg",
+          "imagen2": "Img/Productos/+360.jpg",
+          "imagen3": "Img/Productos/+360.jpg",
+          "descripcion": "+360 C50 Robot Aspiradora y fregona",
+          "url": "Producto.html",
+          "reseña1":"me encanto el producto, super recomendado",
+          "reseña2":"lo volveria a comprar, me hice fan de esto"
+        },
+        {
+          "id": 9,
+          "nombre": "MoesGo Foco Inteligente WiFi",
+          "precio": 388.00,
+          "categoria": "Iluminacion Inteligente",
+          "imagen": "Img/Productos/FocoInteligente.jpg",
+          "imagen2": "Img/Productos/FocoInteligente.jpg",
+          "imagen3": "Img/Productos/FocoInteligente.jpg",
+          "descripcion": "MoesGo Foco Inteligente WiFi",
+          "url": "Producto.html",
+          "reseña1":"me encanto el producto, super recomendado",
+          "reseña2":"lo volveria a comprar, me hice fan de esto"
+        },
+        {
+          "id": 10,
+          "nombre": "Refrigerador Side By Side 22 pies con Pantalla Family Hub Acero oscuro",
+          "precio": 35099.00,
+          "categoria": "Electrodomesticos Inteligentes",
+          "imagen": "Img/Productos/Refrigerador.jpg",
+          "imagen2": "Img/Productos/Refrigerador.jpg",
+          "imagen3": "Img/Productos/Refrigerador.jpg",
+          "descripcion": "Refrigerador Side By Side 22 pies con Pantalla Family Hub Acero oscuro",
+          "url": "Producto.html",
+          "reseña1":"me encanto el producto, super recomendado",
+          "reseña2":"lo volveria a comprar, me hice fan de esto"
+        }
+    
+      
+]

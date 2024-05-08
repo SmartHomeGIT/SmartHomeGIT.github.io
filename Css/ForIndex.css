@@ -624,221 +624,6 @@ footer button{
 
 
 
-
-
-
-
-
-
-/*ESTILOS PRODUCTO*/
-#MainProducto{
-    background-color: rgb(243, 243, 243);
-    padding-top: 75px;
-    width: 100%;
-    height: auto;
-    
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; 
-    margin-top: 50px;
-}
-
-.product-content {
-    display: flex;
-}
-
-.star {
-    font-size: 32px;
-    color: #bbb;
-    transition: color 0.3s;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-left: -10px;
-    margin-left: 5px;
-}
-.star.checked, .star:hover {
-    color: gold;
-}
-.heart {
-    font-size: 32px;
-    color: #44DBBD;
-    cursor: pointer;
-    position: absolute;
-    top: 350px; /* Ajustar la posición verticalmente */
-    margin-right: 450px; 
-}
-
-.heart.liked {
-    color: #ff0000; /* Rojo */
-}
-.product-image-container {
-    position: relative;
-    width: 510px;
-    height: 510px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Agregar sombra */ ;   
-    margin-top: -10px;
-    margin-right: 650px;
-    padding: 10px;
-}
-
-.product-image {
-    position: absolute;
-    top: 50%;
-    /* Coloca la parte superior de la imagen en el centro vertical */
-    left: 50%;
-    /* Coloca el lado izquierdo de la imagen en el centro horizontal */
-    transform: translate(-50%, -50%);
-    /* Desplaza la imagen hacia atrás en su propia mitad en ambas direcciones */
-    width: 100%;
-    /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: auto;
-    object-fit: contain;
-}
-
-.product-thumbnails {
-    margin-left: -77%;
-
-    display: flex;
-    flex-direction: row;
-    margin-top: 550px;
-}
-
-.thumbnail {
-    width: 100px;
-    height: 100px;
-    margin-top: 30px;
-    margin-right: 10px; 
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* sombra hor ver dif col*/ ;   
-    
-}
-
-.thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-
-#cantidad{
-    width: 50px;
-    height: 30px;
-}
-
-#AgregarAlCarrito {
-    width: 300px; 
-    height: 40px; 
-    background-color: #44DBBD;
-    color: white; 
-    border: none; 
-    cursor: pointer; 
-    margin-top: 35px; 
-}
-
-.comments-box {
-    padding: 10px;
-    font-size: 1.2em; 
-    text-align: left; 
-    margin-top: 80px;
-    margin-left: 20px; 
-    background-color: #44DBBD;
-}
-
-.user-comment-box {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.user-comment-box textarea {
-    width: 93%;
-    padding: 20px;
-    margin-bottom: 10px;
-    margin: center;
-    resize: vertical;
-}
-
-.user-comment-box button {
-    padding: 10px 20px;
-    background-color: #44DBBD;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-.product-description {
-    position: absolute;
-    top: 40px;
-    
-    margin-left: 750px;
-    
-    transform: translateX(-50%);
-    
-}
-.Tuscomentarios {
-    margin-top: 20px;
-    text-align: center;
-}
-.user-comments-box {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-.comment-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.user-comments-box ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.user-comments-box li {
- 
-    padding: 10px;
-    margin-bottom: 10px;
-}
-.product-long-description {
-    margin-top: 700px;
-    
-    margin-left: -22%;
-    
-}
-.redes-sociales {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    margin-top: 80px;
-}
-
-.redes-sociales i {
-    font-size: 24px;
-}
-/*ESTILOS PRODUCTO FIN */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*ESTILOS CATALOGO */
 
 /*Agregado por Proa*/
@@ -1157,4 +942,49 @@ footer button{
         height: 50px;
     }
 
+}
+
+.submenu2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: grey;
+    z-index: 1;
+    font-size: large;
+}
+
+.dropdown:hover .submenu2 {
+    display: block;
+}
+
+.submenu2 li {
+    display: block;
+    margin: 0;
+    margin-top: 10px;
+}
+.submenu2 li:hover {
+    background-color: #30313165;
+}
+
+.submenu2 a {
+    padding: 10px 20px;
+}
+
+ /* Estilos para el resultado de búsqueda */
+ #resultados {
+    list-style-type: none;
+    padding: 0;
+    width: 300px; 
+}
+#resultados li {
+    display: flex; 
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+#resultados img {
+    width: 20px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin-right: 10px;
 }

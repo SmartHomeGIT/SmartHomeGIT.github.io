@@ -2,8 +2,8 @@ var cookieOne = 0;
 function aceptarCookies() {
     if (cookieOne == 0){
         var cookieNotice = document.getElementById('cookie-notice');
-        cookieNotice.style.display = 'none';
-        cookieOne ++;
+        cookieNotice.style.display = 'none';        
+        cookieOne++;
     }
 
 }
