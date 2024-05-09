@@ -988,3 +988,18 @@ footer button{
     object-fit: contain;
     margin-right: 10px;
 }
+
+
+#resultadoss li{
+    color: #000;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content:start;
+    font-size: large;
+    text-align: end;
+
+}
+#resultadoss li:hover{
+    background-color: #E0E0E0;
+}

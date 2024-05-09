@@ -23,14 +23,14 @@
                         <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaAsistentes()">Asistentes de Voz y Controladores</a></li>
                     </ul>
                 </li>   
-                <li>
+                <li class="dropdown">
                     <div class="BusquedaDIV">
                         <div id="AlineadoBarra">
-                        <input id="BarraBusqueda" type="text" placeholder="Buscar...">
+                        <input id="BarraBusqueda" type="text" placeholder="Buscar..." oninput="buscarProductos()">
                         <button id="ButtonBusqueda" type="submit"><img src="Img\IconoBusqueda.png" alt="IconoBuscar" title="Icono Busqueda" oninput="buscarProductos()"></button>
-                        </div>
-                        <ul id="resultados"></ul>
-                    </div>            
+                        </div>                        
+                    </div>  
+                    <ul id="resultadoss" class="submenu2"></ul>          
                 </li>
                 <li id="AcomodarHorizontales">
                     <div id="CarritoAcomodo">

@@ -23,14 +23,14 @@
                         <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaAsistentes()">Asistentes de Voz y Controladores</a></li>
                     </ul>
                 </li>   
-                <li>
+                <li class="dropdown">
                     <div class="BusquedaDIV">
                         <div id="AlineadoBarra">
-                        <input id="BarraBusqueda" type="text" placeholder="Buscar...">
+                        <input id="BarraBusqueda" type="text" placeholder="Buscar..." oninput="buscarProductos()">
                         <button id="ButtonBusqueda" type="submit"><img src="Img\IconoBusqueda.png" alt="IconoBuscar" title="Icono Busqueda" oninput="buscarProductos()"></button>
-                        </div>
-                        <ul id="resultados"></ul>
-                    </div>            
+                        </div>                        
+                    </div>  
+                    <ul id="resultadoss" class="submenu2"></ul>          
                 </li>
                 <li id="AcomodarHorizontales">
                     <div id="CarritoAcomodo">
@@ -61,7 +61,8 @@
                             <th style="width: 20%;">Producto</th>
                             <th style="width: 10%;">Precio</th>
                             <th style="width: 5%;">Cantidad</th>
-                            <th style="width: 10%;">Total</th>                            
+                            <th style="width: 10%;">Total</th>
+                            <th style="width: 10%;">Fecha de la Orden</th>                            
                         </tr>
                     </thead>
                     <tbody>
@@ -127,3 +128,4 @@
 </style>
 <script src="Js/Sesion.js"></script>
 <script src="Js/scriptOrdenes.js"></script>
+<script src="Js/BarraBusqueda.js"></script>

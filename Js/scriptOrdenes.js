@@ -7,7 +7,7 @@ async function cargarDatosProductos() {
 // Función para mostrar el Historial de compras
 async function mostrarHistorial() {
     // Obtener el arreglo de productos del carrito de sessionStorage
-    let productosOrdenes = sessionStorage.getItem('ProductosCarrito');
+    let productosOrdenes = sessionStorage.getItem('HistorialCompra');
     
     if (productosOrdenes) {
         // Analiza los datos JSON almacenados en sessionStorage a un arreglo de objetos
@@ -73,7 +73,10 @@ async function mostrarHistorial() {
 
         const columnaSubtotal = document.createElement('td');
         columnaSubtotal.textContent = `$${subtotal.toFixed(2)}`;
-        
+
+        const fechacompra = new Date();
+        const columnafecha = document.createElement('td');
+        columnafecha.textContent = fechacompra.toLocaleDateString();
 
 
         // Añadir las columnas a la fila
@@ -82,6 +85,7 @@ async function mostrarHistorial() {
         fila.appendChild(columnaPrecio);
         fila.appendChild(columnaCantidad);
         fila.appendChild(columnaSubtotal);
+        fila.appendChild(columnafecha);
 
         // Añadir la fila al cuerpo de la tabla
         historialTable.querySelector('tbody').appendChild(fila);

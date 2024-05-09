@@ -23,14 +23,14 @@
                         <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaAsistentes()">Asistentes de Voz y Controladores</a></li>
                     </ul>
                 </li>   
-                <li>
+                <li class="dropdown">
                     <div class="BusquedaDIV">
                         <div id="AlineadoBarra">
-                        <input id="BarraBusqueda" type="text" placeholder="Buscar...">
+                        <input id="BarraBusqueda" type="text" placeholder="Buscar..." oninput="buscarProductos()">
                         <button id="ButtonBusqueda" type="submit"><img src="Img\IconoBusqueda.png" alt="IconoBuscar" title="Icono Busqueda" oninput="buscarProductos()"></button>
-                        </div>
-                        <ul id="resultados"></ul>
-                    </div>            
+                        </div>                        
+                    </div>  
+                    <ul id="resultadoss" class="submenu2"></ul>          
                 </li>
                 <li id="AcomodarHorizontales">
                     <div id="CarritoAcomodo">
@@ -71,7 +71,7 @@
             <div id="Recibo">
                 <div>
                     <div id="totales-div"></div>
-                    <button id="proceder-pago-btn">Proceder al Pago</button>
+                    <div id="paypal-button-container"></div>
                 </div>
                 
             </div>
@@ -136,6 +136,42 @@
 <script src="Js/Sesion.js"></script>
 <script src="Js/BarraBusqueda.js"></script>
 <script src="Js/CarritoCompras.js"></script>
+
+<script src="https://www.paypal.com/sdk/js?client-id=Ae6G5P1v6wP_FvgLwYo7OtoIjY0q6SVfDT0NccN4U9HDFv0gK1Usak6nUpDZGZ3TK59lgArUnepTX8WP&components=buttons&currency=MXN"></script>
+
+
+<script>
+    // Obtiene el total desde sessionStorage
+    const totalCarrito = parseInt(sessionStorage.getItem('total'),10);
+
+    // Configuración de PayPal
+    paypal.Buttons({
+        createOrder: function(data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: totalCarrito
+                    }
+                }]
+            });
+        },
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(orderData) {
+                alert('Pago exitoso. Gracias por tu compra.');                
+                sessionStorage.setItem('HistorialCompra', sessionStorage.getItem('ProductosCarrito'))
+                sessionStorage.setItem('ProductosCarrito','');
+                mostrarCarrito();
+            });
+        },
+        style: {
+
+            label: 'pay'
+        },
+        onCancel: function(data){
+            alert('Pago Cancelado');          
+        }
+    }).render('#paypal-button-container');
+</script>
 
 <style>
     @font-face {

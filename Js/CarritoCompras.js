@@ -1,3 +1,5 @@
+sessionStorage.setItem('orden','1');
+console.log(sessionStorage.getItem('orden'))
 // Función para cargar el JSON de los productos
 async function cargarDatosProductos() {
     // Asegúrate de que la ruta al archivo JSON sea correcta
@@ -53,7 +55,8 @@ async function mostrarCarrito() {
         // Calcular el subtotal
         const subtotal = cantidad * precio;
         total += subtotal;
-
+        
+    
         // Crear una nueva fila para el producto en el carrito
         const fila = document.createElement('tr');
 
@@ -104,14 +107,9 @@ async function mostrarCarrito() {
     // Mostrar el total general en el div de totales
     const totalesDiv = document.getElementById('totales-div');
     totalesDiv.innerHTML = `
-        <p>Total: $${total.toFixed(2)}</p>
-    `;
-
-    // Asigna un evento de clic al botón de proceder al pago
-    document.getElementById('proceder-pago-btn').onclick = function() {
-        // Implementa la funcionalidad para proceder al pago
-        alert('Procediendo al pago...');
-    };
+        <p>Total: $${total.toFixed(2)}</p>`;
+    
+        sessionStorage.setItem('total',total);       
 }
 
 // Ejecutar la función para mostrar el carrito cuando se carga la página

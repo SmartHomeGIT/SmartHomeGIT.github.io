@@ -30,15 +30,15 @@
                         <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaAsistentes()">Asistentes de Voz y Controladores</a></li>
                     </ul>
                 </li>   
-                <li>
-                    <div class="BusquedaDIV">
-                        <div id="AlineadoBarra">
-                        <input id="BarraBusqueda" type="text" placeholder="Buscar...">
-                        <button id="ButtonBusqueda" type="submit"><img src="Img\IconoBusqueda.png" alt="IconoBuscar" title="Icono Busqueda" oninput="buscarProductos()"></button>
-                        </div>
-                        <ul id="resultados"></ul>
-                    </div>            
-                </li>
+                <li class="dropdown">
+                  <div class="BusquedaDIV">
+                      <div id="AlineadoBarra">
+                      <input id="BarraBusqueda" type="text" placeholder="Buscar..." oninput="buscarProductos()">
+                      <button id="ButtonBusqueda" type="submit"><img src="Img\IconoBusqueda.png" alt="IconoBuscar" title="Icono Busqueda" oninput="buscarProductos()"></button>
+                      </div>                        
+                  </div>  
+                  <ul id="resultadoss" class="submenu2"></ul>          
+              </li>
                 <li id="AcomodarHorizontales">
                     <div id="CarritoAcomodo">
                         <a href="CarritoDeCompra.html" title="Redireccion a carrito"><img id="CarritoIcono" src="Img/CarritoCompra.png" alt="IconoCarrito" title="Icono Carrito"></a>
@@ -275,3 +275,4 @@ window.onload = function() {
 
 <script src="Js/Sesion.js"></script>
 <script src="Js/CategoriasMenu.js"></script>
+<script src="Js/BarraBusqueda.js"></script>
