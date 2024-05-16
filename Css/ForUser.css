@@ -25,6 +25,8 @@ body{
     height: 40px;
     font-family: 'Avenir';
     border: none;
+    color: white;
+    font-size: large;
     border-radius: 10px;
     background-color: #44DBBD;
 }

@@ -1,0 +1,162 @@
+body{
+    background-color: #3E3E3E;
+    text-align: center;
+    font-family: 'Avenir';
+    margin-top: 70px;
+}
+.TituloCrud{
+    background-color: white;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;    
+}
+#SeccionUno{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+}
+#SeccionUno p {
+    text-align: start;
+    margin-left: 10px;
+}
+
+.TXTBIN{
+    width: 90%;
+    height: 30px;
+}
+
+#entradas p{
+    margin-bottom: 2px;
+}
+
+.Boton{
+    background-color: #44DBBD;
+    border: none;
+    height: 30px;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.Boton:hover{
+    background-color: #009295;
+}
+
+
+#UsuariosTBL{
+    margin-left: 90px;
+    margin-top: 50px;
+    box-shadow: 20px 15px 10px rgba(0, 0, 0, 0.2);
+    text-align: start;
+    background-color: #f9f9f9;
+}
+
+#UsuariosTBL th{
+    background-color: #E0E0E0;
+}
+
+#UsuariosTBL td{
+    border-bottom: #3E3E3E 1px solid;
+}
+
+
+#ProductosTBL{
+    margin-left: 90px;
+    margin-top: 50px;
+    box-shadow: 20px 15px 10px rgba(0, 0, 0, 0.2);
+    text-align: start;
+    background-color: #f9f9f9;
+}
+
+#ProductosTBL th{
+    background-color: #E0E0E0;
+}
+
+#ProductosTBL td{
+    border-bottom: #3E3E3E 1px solid;
+}
+
+
+#AgregarUsuarioDiv{
+    background-color: #E0E0E0;
+    box-shadow: 20px 15px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+table{
+    border-radius: 5px;
+}
+th{
+    border-right: #3E3E3E 1px solid;
+}
+
+header{
+    display: flex;    
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2); /* Agregar sombra */
+    z-index: 999;
+
+}
+header p{
+    color: #3E3E3E;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+header p:hover{
+    color: #009295;
+    text-decoration: underline;
+    font-style:oblique;
+} 
+
+header img{
+    height: 100%;
+    aspect-ratio: 3/1;
+    object-fit: contain;
+}
+#OpcionesCRUD{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.BotonEliminar{
+    background-color: red;
+    color: white;
+    font-family: 'avenir';
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+}
+.BotonEliminar:hover{
+    background-color: brown;
+}
+.BotonEditar{
+    background-color:#44DBBD ;
+    color: white;
+    font-family: 'avenir';
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+}
+.BotonEditar:hover{
+    background-color: #009295;
+}

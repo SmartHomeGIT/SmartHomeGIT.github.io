@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/CRUD.css">    
+    <title>Document</title>
+</head>
+    <body>
+        <header>
+            <div>
+                <img src="Img/LogoHeader.png" alt="Logo" title="Logo SmartHome">
+            </div>
+            <div id="OpcionesCRUD">
+                <div>
+                    <p onclick="mostrarTituloUno()" id="UsuarioOpcion">Usuarios</p>
+                </div>
+                <div>
+                    <p onclick="mostrarTituloDos()" id="ProductosOpcion">Productos</p>
+                </div>    
+                <div>
+                <p onclick="abrirPagina('Administrador.html')">Cerrar Sesion</p>
+                </div>
+            </div>
+         
+            
+        </header>
+        <h1 id="TituloCrudUno" style="visibility: hidden;" class="TituloCrud">Agregar Usuario</h1>
+        <main style="visibility: hidden;" id="mainuno">
+            <section id="SeccionUno">
+                <article>
+                    <div id="AgregarUsuarioDiv">
+                        <form id="AgregarUsuarioForm">
+                            <div id="entradas">
+                                <h2 id="formHeader">Agregar</h2>
+                                <div>
+                                    <p>ID *</p>
+                                    <label for="role-user">
+                                        <input type="checkbox" id="IdAutomaticoUser" name="IdAutoUser" checked>
+                                        ID Automatico
+                                    </label>  
+                                    <input type="number" id="IdUsuario" class="TXTBIN" name="IdUsua" placeholder="ID" style="visibility: hidden;" required>
+                                </div>
+                                <div>
+                                    <p>Email *</p>
+                                    <input type="email" id="emailIN" class="TXTBIN" name="email" placeholder="Email" required>
+                                </div>
+                                <div>
+                                    <p>Contraseña *</p>
+                                    <input type="password" id="passwordIN" class="TXTBIN" name="password" placeholder="Contraseña" required>
+                                </div>
+                                <div>
+                                    <p>Nombre *</p>
+                                    <input type="text" id="nombreIN" class="TXTBIN" name="nombre" placeholder="Nombre" required>
+                                </div>
+                                <div>
+                                    <p>Apellido *</p>
+                                    <input type="text" id="apellidoIN" class="TXTBIN" name="apellido" placeholder="Apellido" required>
+                                </div>
+                                <div>
+                                    <p>Dirección *</p>
+                                    <input type="text" id="direccionIN" class="TXTBIN" name="direccion" placeholder="Dirección" required value="">
+                                </div>                                                       
+                            </div>
+                            <button type="submit" id="formUnoButton" name="agregar" class="Boton" onclick="agregarUsuario()">Agregar</button>
+                        </form>
+                                
+                    </div>
+                </article>
+                <article>
+                    <table id="UsuariosTBL">
+                        <tr>
+                            <th>ID</th>
+                            <th>Email</th>
+                            <th>Contraseña</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th style="width: 90px;">Dirección</th>
+                            <th>Rol</th>                            
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                        <tbody id="tablaUsuariosBody">
+                            <!-- Aquí se carga el JSON -->
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+        </main>
+        <h1 id="TituloCrudDos" style="visibility: hidden;" class="TituloCrud">Agregar Producto</h1>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <main id="maindos" style="visibility: hidden;">
+            <section id="SeccionUno">
+                <article>
+                    <div id="AgregarUsuarioDiv">
+                        <form id="AgregarProductoForm" >
+                            <div id="entradas">
+                                <h2 id="formHeader">Agregar</h2>
+                                <div>
+                                    <p>ID *</p>
+                                    <label for="role-user">
+                                        <input type="checkbox" id="IdAutomaticoProd" name="IdAutoProd" checked>
+                                        ID Automatico
+                                    </label>  
+                                    <input type="number" id="IdProducto" class="TXTBIN" name="IdProd" placeholder="ID" style="visibility: hidden;" required>
+                                </div>
+                                <div>
+                                    <p>Nombre *</p>
+                                    <input type="text" id="NombreProducto" class="TXTBIN" name="NombreProd" placeholder="Nombre del Producto" required>
+                                </div>
+                                <div>
+                                    <p>Precio *</p>
+                                    <input type="number" id="PrecioProducto" class="TXTBIN" name="PrecioProd" placeholder="Precio" required>
+                                </div>
+                                <div>
+                                    <p>Categoria *</p>
+                                    <input type="text" id="CategoriaProducto" class="TXTBIN" name="CategoriaProd" placeholder="Categoria" required>
+                                </div>
+                                <div>
+                                    <p>imagen 1 *</p>
+                                    <input type="text" id="Imagen1" class="TXTBIN" name="ImagenUno" placeholder="URL Imagen" required>
+                                </div>                        
+                                <div>
+                                    <p>Descripcion *</p>
+                                    <input type="text" name="DescripcionProd" class="TXTBIN" id="DescripcionProducto" placeholder="Descripcion del Producto" required>                                          
+                                </div>                            
+                            </div>
+                            <button type="submit" id="formDosButton" name="agregarProd" class="Boton" onclick="agregarProducto()">Agregar</button>
+                        </form>
+                    </div>
+                </article>
+                <article>
+                    <table id="ProductosTBL">
+                        <tr>
+                            <th>ID</th>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Categoria</th>
+                            <th style="width: 90px;">Descripcion</th>                            
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                        <tbody id="tablaProductosBody">
+                            <!-- Aquí se carga el JSON -->
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+        </main>
+
+    
+</body>
+</html>
+<style>
+    @font-face {
+    font-family: 'Avenir';
+    src: url('Fonts/AvenirNextLight.ttf') format('truetype');
+}
+</style>
+<script src="JS/CRUD.js"></script>

@@ -37,3 +37,66 @@ tr:hover {
     aspect-ratio: 1/1;
     object-fit: contain;
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 999; /* Asegura que esté por encima de todo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.productos-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.productos-table th, .productos-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.productos-table th {
+    background-color: #f2f2f2;
+}
+
+#BotonDetalles{
+    background-color: #44DBBD;
+    color: white;
+    font-family: 'avenir';
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+}
+#BotonDetalles:hover{
+    background-color: #009295;
+}
+
+#BotonCerrar{
+    background-color: Red;
+    height: 30px;
+    color: white;
+    font-family: 'avenir';
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.overlay tr:first-of-type{
+    background-color: #cfcdcd;
+}

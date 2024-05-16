@@ -1,0 +1,64 @@
+[
+    {
+        "NOrden": "160524",
+        "ProductosOrden":[
+            {
+                "imagen": "Img/Productos/TiraLedInteligente2.jpeg",
+                "nombre":"Tira de luz degradada Hue Play de 65",
+                "precio":799.00,
+                "Cantidad":2,
+                "SubTotal": 1598.00                
+            },
+            {
+                "imagen": "Img/Productos/+360.jpg",
+                "nombre":"+360 C50 Robot Aspiradora y fregona",
+                "precio":2999.00,
+                "Cantidad":1,
+                "SubTotal": 2999.00
+            },
+            {
+                "imagen":"Img/Productos/AmazoneEchoAlexa.jpg",
+                "nombre":"Amazon Echo Alexa 4ta Generación Negro",
+                "precio":2499.00,
+                "Cantidad":1,
+                "SubTotal": 2499.00                
+            }
+        
+        ],
+        "CantidadArticulos": 4,
+        "FechaOrden":"14/05/2024",
+        "Total": 7096.00
+        
+    },
+    {
+        "NOrden": "011023",
+        "ProductosOrden":[
+            {
+                "imagen": "Img/Productos/TiraLedInteligente2.jpeg",
+                "nombre":"Tira de luz degradada Hue Play de 65",
+                "precio":799.00,
+                "Cantidad":2,
+                "SubTotal": 1598.00                
+            },
+            {
+                "imagen": "Img/Productos/+360.jpg",
+                "nombre":"+360 C50 Robot Aspiradora y fregona",
+                "precio":2999.00,
+                "Cantidad":2,
+                "SubTotal": 5998.00
+            },
+            {
+                "imagen":"Img/Productos/AmazoneEchoAlexa.jpg",
+                "nombre":"Amazon Echo Alexa 4ta Generación Negro",
+                "precio":2499.00,
+                "Cantidad":1,
+                "SubTotal": 2499.00                
+            }
+        
+        ],
+        "CantidadArticulos": 5,
+        "FechaOrden":"01/10/2023",
+        "Total": 10095.00
+        
+    }
+]

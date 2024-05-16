@@ -2,7 +2,7 @@
     {
         "id": 1,
         "email": "JavierProa@NegociosElectronicos.com",
-        "password": "Proa1234",
+        "password": "******",
         "nombre" : "Javier",
         "apellido" : "Proa",
         "direccion": "SmartHome-Company",
@@ -12,7 +12,7 @@
     {
         "id": 2,
         "email": "MartinTiscareño@NegociosElectronicos.com",
-        "password": "Ortiz1234",
+        "password": "******",
         "nombre" : "Martin",
         "apellido" : "Ortiz",
         "direccion": "SmartHome-Company",

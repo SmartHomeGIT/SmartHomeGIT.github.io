@@ -6,11 +6,10 @@ const jsonFilePath = 'Json/Productos.json';
 
 // Función para cargar el JSON y actualizar el contenido de la página
 function updateProductPage() {
-    // Cargar el archivo JSON con los datos de los productos
+    
     fetch(jsonFilePath)
         .then(response => response.json())
         .then(data => {
-            // Buscar el producto con el ID correspondiente
             const product = data.find(item => item.id === parseInt(productId));
 
             if (product) {

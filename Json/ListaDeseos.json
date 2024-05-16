@@ -1,0 +1,12 @@
+[
+    {
+        "nombre": "Amazon Echo Pop Altavoz inteligente con Alexa 1ra Gen 2023 Glaciar Blanco",
+        "precio": 699.00,
+        "imagen": "Img/Alexa1.jpg"
+    },
+    {        
+        "nombre": "Lavasecadora Hisense electrónica 15 kg WDQT1514",
+        "precio": 13719.00,
+        "imagen": "Img/Productos/Lavasecadora.jpg"    
+      }
+]
