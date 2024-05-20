@@ -918,6 +918,7 @@ footer button{
         width: auto;    
         margin-left: 50px ;
     }
+   
     #IndexSeccionDosAcomodo Div:nth-child(2){
         display: none;
     }
@@ -942,6 +943,12 @@ footer button{
         height: 50px;
     }
 
+    #TarjetaProducto p{
+        text-align: center;
+        margin-top: 90px;
+        
+    }
+    
 }
 
 .submenu2 {

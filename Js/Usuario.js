@@ -10,10 +10,24 @@
                 document.getElementById('nombre').value = usuario.nombre;
                 document.getElementById('apellido').value = usuario.apellido;
                 document.getElementById('direccion').value = usuario.direccion;
+                document.getElementById('password').value = usuario.password;
             })
             .catch(error => console.error('Error al obtener los datos:', error));
 
-        // Agregar un evento de clic al botón de "Actualizar Datos"
-        document.getElementById('Actualizar').addEventListener('click', () => {
+        var passwordDiv = document.getElementById('passwordDiv');
+        var password2 = document.getElementById('password2');
+        document.getElementById('password').addEventListener('click', () =>{                
+            passwordDiv.style.visibility = "visible";
+            passwordDiv.style.display = "block";
+                
+        })
+            // Agregar un evento de clic al botón de "Actualizar Datos"
+        document.getElementById('Actualizar').addEventListener('click', () => {        
+            passwordDiv.style.visibility = "hidden";   
+            passwordDiv.style.display = "none";
+            password2.value = null;
             alert('Se actualizaron los datos');
         });
+    
+        passwordDiv.style.visibility = "hidden";   
+        passwordDiv.style.display = "none";
