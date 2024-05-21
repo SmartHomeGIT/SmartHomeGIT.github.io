@@ -160,3 +160,104 @@ header img{
 .BotonEditar:hover{
     background-color: #009295;
 }
+
+#dashboard{
+    color: #009295;
+    margin-top: -550px;
+    width: 100%;
+    display: block;
+    justify-content: start;
+
+}
+#Titulo{
+    color: white;
+    text-align:start ;
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin-left: 90px;
+    margin-bottom: 70px;
+}
+#asideDashboard{
+    display: flex;
+    justify-content: space-evenly;
+    width: 900px;
+}
+
+#TarjetaProducto{
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+    align-content: center;
+    background: linear-gradient(to right, #009295,#44DBBD);
+
+}
+#TarjetaProducto:hover {
+    background: linear-gradient(to left, #005d5e,#005d5e);
+    cursor: pointer;
+
+}
+
+
+#TarjetaProducto h1{
+    color: white;
+    letter-spacing: 10px;
+}
+
+#TarjetaUsuarios h1{
+    color: white;
+    letter-spacing: 10px;
+}
+
+#TarjetaUsuarios{
+    background: linear-gradient(to right, #FFBE00,#fbcd43);
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+    align-content: center;
+}
+#TarjetaUsuarios:hover {
+    background: linear-gradient(to left, #d7a100,#d7a100);
+    cursor: pointer;
+
+}
+
+.hamburguesa-btn {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .hamburguesa-btn {
+        display: initial;
+        margin-left: 50px;
+        background-color: #44DBBD;
+        border: none;
+        color: white;
+        font-size: xx-large;
+        cursor: pointer;
+    }
+    #OpcionesCRUD.mostrar {
+        display: block; 
+    }
+
+    .hamburguesa-btn:hover{
+        background-color: #005d5e;
+    }
+
+    #OpcionesCRUD{
+        display: none;
+    }
+    #asideDashboard{
+        display: block;        
+        flex-wrap: wrap;
+    }
+    .items{
+        margin-top: 50px;
+        
+    }
+    #Titulo{
+    font-size: large;
+    margin-left: 30px;
+    }
+}

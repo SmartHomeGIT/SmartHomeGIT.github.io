@@ -1,9 +1,25 @@
 var usuariosArray = [] ;
 var productosArray = [] ;
 
+function toggleOpcionesCRUD() {
+    var opciones = document.getElementById('OpcionesCRUD');
+    if (opciones.classList.contains('mostrar')) {
+        opciones.classList.remove('mostrar');
+    } else {
+        opciones.classList.add('mostrar');
+    }
+
+    var header = document.getElementById('OpcionesCRUD')
+    header.style.height = '200px';
+    header.style.backgroundColor = 'rgba(255, 255, 255, 0.802)';
+}
+
 function mostrarTituloUno() {    
     //la ok
     var titulouno = document.getElementById("TituloCrudUno");
+    var inicio = document.getElementById('dashboard');
+    inicio.style.visibility = 'hidden';
+    inicio.style.display = 'none';
     titulouno.style.visibility = "visible";
     titulouno.style.display = "block";
     var mainuno = document.getElementById("mainuno");
@@ -36,7 +52,9 @@ function mostrarTituloDos() { //aqui igual que arriba
     var maindos = document.getElementById("maindos");
     maindos.style.display = "block";
     maindos.style.visibility = "visible";
-
+    var inicio = document.getElementById('dashboard');
+    inicio.style.visibility = 'hidden';
+    inicio.style.display = 'none';
 
     var titulo = document.getElementById("TituloCrudUno");
     titulo.style.visibility = "hidden";

@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/CRUD.css">    
-    <title>Document</title>
+    <link rel="stylesheet" href="Css/CRUD.css">   
+    <link rel="icon" type="image/png" href="Img/Logo-Title.png" >
+ 
+    <title>ADMINISTRADOR</title>
 </head>
     <body>
-        <header>
-            <div>
+        <header id="HeaderJs">
+            <div onclick="location.reload()">
                 <img src="Img/LogoHeader.png" alt="Logo" title="Logo SmartHome">
             </div>
+            <button class="hamburguesa-btn" onclick="toggleOpcionesCRUD()">&#9776;</button>    
             <div id="OpcionesCRUD">
                 <div>
                     <p onclick="mostrarTituloUno()" id="UsuarioOpcion">Usuarios</p>
@@ -24,8 +27,8 @@
             </div>
          
             
-        </header>
-        <h1 id="TituloCrudUno" style="visibility: hidden;" class="TituloCrud">Agregar Usuario</h1>
+        </header>    
+        <h1 id="TituloCrudUno" style="visibility: hidden; display: none;" class="TituloCrud">Agregar Usuario</h1>
         <main style="visibility: hidden;" id="mainuno">
             <section id="SeccionUno">
                 <article>
@@ -87,7 +90,7 @@
                 </article>
             </section>
         </main>
-        <h1 id="TituloCrudDos" style="visibility: hidden;" class="TituloCrud">Agregar Producto</h1>
+        <h1 id="TituloCrudDos" style="visibility: hidden; display: none;" class="TituloCrud">Agregar Producto</h1>
         
 
 
@@ -97,8 +100,22 @@
 
 
 
-
-
+        <main id="dashboard" style="visibility: visible; display: block;">
+        <section id="Titulo">
+            <h1>BIENVENIDO AL PERFIL ADMINISTRADOR</h1>
+        </section>
+            <section>
+            <aside id="asideDashboard">
+        
+                <div class="items" id="TarjetaProducto" onclick="mostrarTituloDos()">
+                    <h1>PRODUCTOS</h1>
+                </div>
+                <div class="items" id="TarjetaUsuarios" onclick="mostrarTituloUno()" >
+                    <h1>USUARIOS</h1>
+                </div>
+            </aside>
+        </section>
+       </main>
 
 
 
