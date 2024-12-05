@@ -29,15 +29,15 @@ async function mostrarCarrito() {
     // Limpiar el contenido de la tabla antes de llenarla
     carritoTable.querySelector('tbody').innerHTML = '';
 
-    let total = 0; // Variable para almacenar el total general
+    let subtotal = 0; // Variable para almacenar el subtotal
 
     // Recorrer los productos en el carrito
     for (const producto of datosCarrito) {
         const { imagen, nombre, precio, cantidad } = producto;
 
-        // Calcular el subtotal
-        const subtotal = cantidad * precio;
-        total += subtotal;
+        // Calcular el subtotal por producto
+        const productoSubtotal = cantidad * precio;
+        subtotal += productoSubtotal;
 
         // Crear una nueva fila para el producto en el carrito
         const fila = document.createElement('tr');
@@ -59,7 +59,7 @@ async function mostrarCarrito() {
         columnaCantidad.textContent = cantidad;
 
         const columnaSubtotal = document.createElement('td');
-        columnaSubtotal.textContent = `$${subtotal.toFixed(2)}`;
+        columnaSubtotal.textContent = `$${productoSubtotal.toFixed(2)}`;
 
         const columnaEliminar = document.createElement('td');
         const botonEliminar = document.createElement('img');
@@ -81,14 +81,19 @@ async function mostrarCarrito() {
         carritoTable.querySelector('tbody').appendChild(fila);
     }
 
-    // Mostrar el total general en el div de totales
+    // Calcular el IVA (16%)
+    const iva = subtotal * 0.16;
+    const totalConImpuesto = subtotal + iva;
+
+    // Mostrar el subtotal y el total con IVA en el div de totales
     const totalesDiv = document.getElementById('totales-div');
     totalesDiv.innerHTML = `
-        <p>Total: $${total.toFixed(2)}</p>`;
+        <p>Subtotal: $${subtotal.toFixed(2)}</p>
+        <p>IVA (16%): $${iva.toFixed(2)}</p>
+        <p>Total: $${totalConImpuesto.toFixed(2)}</p>`;
 
     // Guardar el total en sessionStorage
-    sessionStorage.setItem('total', total);
-    
+    sessionStorage.setItem('total', totalConImpuesto);
 }
 
 // Función para eliminar un producto del carrito

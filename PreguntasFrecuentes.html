@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/ForIndex.css">
+
+
+    <title>SmartHome | Preguntas Frecuentes </title>    
+    <meta name="description" content="Manejamos Todo Tipo de Accesorios para Hogar Inteligente, tu E-Commerce por excelencia, haz de tu casa un Hogar, encender luces, abrir ventanas, poner musica, todo con tu voz, son algunas de las actividades que SmartHome conecta para ti, Enamorate de la Domotica">
+    <meta name="keywords" content="Luminaria, Focos Inteligentes, Electrodomesticos Inteligentes, Asistentes de voz,  Iluminación Inteligente, Climatización Inteligente">
+    <meta name="author" content="Javier D. Proa, Martín O. Tiscareño">
+
+    <link rel="icon" type="image/png" href="Img/Logo-Title.png" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" title="Redireccion a pagina principal"><img src="Img/LogoHeader.png" alt="Logo" title="Logo SmartHome"></a></h1>
+        <button class="hamburguesa-btn">&#9776;</button> <!-- Botón de hamburguesa -->
+        <nav class="menu">
+            <ul id="AcomodarHorizontales">
+                <li><a href="index.html" title="Redireccion a pagina principal">Inicio</a></li>                    
+                <li class="dropdown">
+                    <a href="CatalogoProductos.html" style="margin-right: 230px;">Explorar</a>
+                    <ul class="submenu">
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaIluminacion()">Iluminación Inteligente</a></li>
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaElectInteligentes()">Electrodomesticos Inteligentes</a></li>
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaClimaInteligente()">Climatización Inteligente</a></li>
+                        <li><a href="ProductosXCategorias.html" title="Redireccion a Catalogo" onclick="CategoriaAsistentes()">Asistentes de Voz y Controladores</a></li>
+                    </ul>
+                </li>   
+                <li class="dropdown">
+                    <div class="BusquedaDIV">
+                        <div id="AlineadoBarra">
+                        <input id="BarraBusqueda" type="text" placeholder="Buscar..." oninput="buscarProductos()">
+                        <button id="ButtonBusqueda" type="submit"><img src="Img\IconoBusqueda.png" alt="IconoBuscar" title="Icono Busqueda" oninput="buscarProductos()"></button>
+                        </div>                        
+                    </div>  
+                    <ul id="resultadoss" class="submenu2"></ul>          
+                </li>
+                <li id="AcomodarHorizontales">
+                    <div id="CarritoAcomodo">
+                        <a href="CarritoDeCompra.html" title="Redireccion a carrito"><img id="CarritoIcono" src="Img/CarritoCompra.png" alt="IconoCarrito" title="Icono Carrito"></a>
+                    </div>
+                    <div>
+                        <li class="dropdown">
+                            <a href="Login.html" id="UsuarioMostrarIndex">Iniciar Sesión</a>                            
+                            <ul class="submenu2" id="ListaUsuario">
+                                <li><a href="Usuario.html" title="Redireccion a Datos de Usuario">Cuenta</a></li>
+                                <li><a href="ListaDeseos.html" title="Redireccion a Lista de deseos">Lista de deseos</a></li>
+                                <li><a href="OrdenesCompra.html" title="Redireccion a Ordenes de Compras">Historial de Compras</a></li>
+                                <li><a href="Login.html" title="CarrarSesion" onclick="CerrarSesion()">Cerrar Sesion</a></li>                        
+                    </div>
+                </li>
+            </ul>
+        </nav>             
+    </header>
+    
+    <main>
+        <div class="container" style="margin-top: 100px;">
+            <h2 class="faq-title">Preguntas Frecuentes</h2>
+            <ul class="faq-list">
+                <li class="faq-item">
+                    <h3>¿Qué es SmartHome?</h3>
+                    <p>SmartHome es tu tienda online especializada en accesorios para hogar inteligente, donde encontrarás productos de las mejores marcas para crear un hogar más eficiente y cómodo.</p>
+                </li>
+                <li class="faq-item">
+                    <h3>¿Qué tipos de productos ofrecen?</h3>
+                    <p>En SmartHome ofrecemos una amplia gama de productos como luminarias, electrodomésticos inteligentes, asistentes de voz, y dispositivos para controlar tu hogar desde tu teléfono móvil.</p>
+                </li>
+                <li class="faq-item">
+                    <h3>¿Son los productos fáciles de instalar?</h3>
+                    <p>Sí, todos nuestros productos están diseñados para que puedas instalarlos fácilmente sin necesidad de un técnico. Con solo conectar el dispositivo a tu Wi-Fi, podrás empezar a disfrutar de su funcionalidad.</p>
+                </li>
+                <li class="faq-item">
+                    <h3>¿Cómo funciona el control de los dispositivos inteligentes?</h3>
+                    <p>Los dispositivos inteligentes de SmartHome se conectan mediante Wi-Fi, permitiéndote controlarlos de manera sencilla a través de tu teléfono móvil o un asistente de voz compatible.</p>
+                </li>
+                <li class="faq-item">
+                    <h3>¿Los productos son compatibles con Bluetooth?</h3>
+                    <p>Algunos de nuestros productos no requieren Wi-Fi y funcionan con Bluetooth, lo que facilita su uso en casas donde no hay una conexión a Internet estable.</p>
+                </li>
+                <li class="faq-item">
+                    <h3>¿Cómo puedo ahorrar energía con los productos SmartHome?</h3>
+                    <p>Los productos de SmartHome están diseñados para ser energéticamente eficientes, permitiéndote reducir el consumo de energía sin sacrificar la calidad o el rendimiento.</p>
+                </li>
+                <li class="faq-item">
+                    <h3>¿Es segura la compra en SmartHome?</h3>
+                    <p>Sí, nuestras compras son 100% seguras. Usamos los mejores métodos de pago y encriptación para proteger tu información personal y financiera.</p>
+                </li>
+                <li class="faq-item">
+                    <h3>¿Cómo puedo realizar un pedido?</h3>
+                    <p>Solo tienes que visitar nuestro sitio web, elegir los productos que desees, agregarlos al carrito, y proceder con el pago de manera rápida y segura.</p>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+        <footer>
+            <div id="OrdenarHorizontal" class="FooterDivAcomodo">
+
+                <div id="FooterDivUno" style="margin-right: 50px;">
+                    <p onclick="abrirPagina('PreguntasFrecuentes.html')">Preguntas Frecuentes</p>
+                    <a href="https://www.facebook.com/people/SmartHome/61558822961209" title="Pagina de Facebook"><p>CONTACTAR</p></a>
+                    <a href="CatalogoProductos.html" title="Redireccion a Catalogo"><p style="padding-top: 90px;">Veamos los Productos</p></a>
+                    <div id="OrdenarHorizontal" style="justify-content: space-between; padding-top: 100px;">
+                        <a href="https://www.facebook.com/people/SmartHome/61558822961209">
+                            <img src="Img/FacebookLogo.png" alt="FBLOGO" title="Icono Facebook SmartHome" style="width: 25px; height: auto;">
+                        </a>
+                        <img src="Img/TwitterLogo.png" alt="TWLOGO" title="Icono Twitter SmartHome" style="width: 25px; height: auto;">
+                        <img src="Img/YoutubeLogo.png" alt="YTLogo" title="Icono Youtube SmartHome" style="width: 25px; height: auto;">
+                    </div>
+                    <p>© 2024 SMARTHOME</p>
+                </div>
+                    
+                <div id="FooterDivDos" style="margin-right: 50px;">
+                    <p>NOSOTROS</p>
+                    <p>SmartHome es tu tienda online de <br>accesorios para hogar inteligente lider <br>en la industria, siempre trabajando con <br>las mejores marcas para llegar a ti.</p>
+                    <ul>
+                        <li>Lideres en la industria</li>
+                        <li>Compras 100% seguras</li>
+                        <li>Entregas garantizadas</li>
+                    </ul>
+                </div>
+
+                <div id="FooterDivTres">
+                    <p>NOVEDADES</p>
+                    <p>Registrate con nosotros para recibir informacion <br>acerca de nuestros nuevos productos, los recien <br>llegados y los que estan por llegar, mantente al<br> pendiente de nuestras novedades.</p>
+                    <div>
+                        <input id="FooterCorreoElectronicoBarra" type="text" name="CorreoElectronico" placeholder="Ingresa tu email aquí*">                        
+                    </div>                    
+                    <button>Unirse</button>
+                </div>
+
+            </div>
+        </footer>
+        <div class="cookie-notice" id="cookie-notice">
+            <div id="OrdenarHorizontal">
+                <p>
+                    Este sitio web utiliza cookies para mejorar tu experiencia de usuario. 
+                    Al continuar navegando por el sitio, aceptas nuestro uso de cookies. 
+                    Para más información sobre el uso de tus datos personales y tus derechos 
+                    conforme a la 
+                    <span style="text-decoration: underline; cursor: pointer;"> 
+                        Ley Federal de Protección de Datos Personales  
+                    </span>en 
+                    Posesión de los Particulares de México, consulta nuestra 
+                    <span style="text-decoration: underline; cursor: pointer;"> política de privacidad.</span>
+                    
+                
+                </p>
+                <button onclick="aceptarCookies()">Aceptar</button>
+            </div>
+        </div>
+        
+
+    </main>
+</body>
+</html>
+<style>
+    @font-face {
+    font-family: 'Avenir';
+    src: url('Fonts/AvenirNextLight.ttf') format('truetype');
+}
+</style>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DL4V3R27KH"></script>
+
+    <script src="Js/IndexJS.js"></script>
+    <script src="Js/Sesion.js"></script>
+    <script src="Js/BarraBusqueda.js"></script>
+    <script src="Js/CategoriasMenu.js"></script>
+
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .faq-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .faq-list {
+            text-align: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        .faq-item {
+            background-color: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item h3 {
+            margin: 0;
+            cursor: pointer;
+        }
+        .faq-item p {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        .faq-item.active p {
+            display: block;
+        }
+    </style>
+
+<script>
+    const faqItems = document.querySelectorAll('.faq-item h3');
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentElement;
+            parent.classList.toggle('active');
+        });
+    });
+</script>

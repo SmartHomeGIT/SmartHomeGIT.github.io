@@ -694,9 +694,10 @@ footer button{
 }
 
 .dropdown-btn {
-    background-color: rgb(100, 209, 174);
+    background-color: rgb(226, 226, 226);
     color: black;
-    border: 1px solid black;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 15px;
     padding: 10px 20px;
     cursor: pointer;
     width: 120px;

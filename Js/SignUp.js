@@ -1,44 +1,60 @@
+import { initializeApp } from 'firebase/app';
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import { getFirestore, doc, setDoc } from 'firebase/firestore'; 
+
+const firebaseConfig = {
+    apiKey: "AIzaSyCoclc2zrK86twW5aU_pkHKKTjZuxd9r00",
+    authDomain: "smarthome-4f7ca.firebaseapp.com",
+    projectId: "smarthome-4f7ca",
+    storageBucket: "smarthome-4f7ca.firebasestorage.app",
+    messagingSenderId: "176169264261",
+    appId: "1:176169264261:web:33ce39f5bf4fa0b6ee75ec"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app); // Inicializamos Firestore
+
 function abrirPagina(pagina) {
     window.location.href = pagina;
 }
+
 async function Submit(event) {
     event.preventDefault();
 
     const email = document.getElementById('email').value.toLowerCase();   
     const password = document.getElementById('password').value;
     const password2 = document.getElementById('password2').value;
-    
+
     if (password !== password2) {
         alert('Las contraseñas no coinciden. Por favor, inténtalo de nuevo.');
         return;
     }
 
-    try{
-        const response = await fetch('./Json/Usuarios.json');
-        const usuarios = await response.json();
+    try {
+        // Registra al usuario usando Firebase Authentication
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        const user = userCredential.user;
 
-        // Verificar si el correo ya existe
-        const emailExists = usuarios.some(usuario => usuario.email.toLowerCase() === email);
-        if (emailExists) {
-            alert('El correo electrónico ya está registrado. Por favor, elige otro.');
-            return;
-        }
+        // Guardar el usuario en Firestore con su UID
+        await setDoc(doc(db, "Web_Users", user.uid), {
+            email: email,
+            uid: user.uid,
+            createdAt: new Date()
+        });
 
-        //creamos una sesion temporal para que el usuario se guarde y podamos manejarlo en otra parte
-        sessionStorage.setItem('password', password)
-        sessionStorage.setItem('email',email );
-        
-        alert('Registro exitoso'+sessionStorage.getItem('email'));
+        // Guardar el email y UID en sessionStorage
+        sessionStorage.setItem('email', email);
+        sessionStorage.setItem('userId', user.uid);
+
+        alert('Registro exitoso. Bienvenido, ' + email);
         abrirPagina('index.html');
-
-    }catch (error){
-        console.error('Error al cargar los datos de los usuarios:', error);
-        alert('Ocurrió un error');
+    } catch (error) {
+        console.error('Error al registrar al usuario:', error.message);
+        alert('Ocurrió un error en el registro');
     }
-
-
-
 }
+
 // es solo para que brinque de campos cuando se le de enter
 document.getElementById('email').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
@@ -60,5 +76,5 @@ document.getElementById('password2').addEventListener('keydown', function(event)
         event.preventDefault();
     }
 });
-document.getElementById('BotonIniciarSesion').addEventListener('click', Submit);
 
+document.getElementById('BotonIniciarSesion').addEventListener('click', Submit);
